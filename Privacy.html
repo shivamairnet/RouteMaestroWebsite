@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>RouteMaestro</title>	
+
+		<meta name="keywords" content="RouteMaestro" />
+		<meta name="description" content="RouteMaestro">
+		<meta name="author" content="RouteMaestro">
+		<meta name= "robots" content="index, follow">
+
+		<!-- Favicon -->
+	<link rel="shortcut icon" href="img\WebImages\image (2).png" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="img\WebImages\image (2).png">
+
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-insurance.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-insurance.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<style>
+	
+	/* .container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+        .phone-input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 100%;
+        }
+        .iti {
+            width: 100%;
+        } */
+
+
+.gradient-bg {
+  background: linear-gradient(90deg, #FF4040 0%, #C729A1 35.19%, #AD17CF 62.15%, #9B09ED 96.58%, #2F3268 121.58%);
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.btn-custom1{
+  background: white; 
+  padding-right: 0.25rem !important;
+  padding-left: 0.25rem !important;
+  color: red;
+  border-color: #07072C; 
+  padding: 0.45rem 0.45rem; 
+  border-radius: 0.25rem; 
+  font-weight: bold;
+  font-size: 0.9rem !important; 
+  align-items: center;
+  width: 150px !important;
+  margin-left: 30px !important;
+  margin-bottom: 3px;
+}
+
+.btn-custom7:hover {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+
+
+.btn-custom3:hover {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+
+.btn-custom:hover {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+
+.btn-custom1:hover {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+
+.btn-custom7.close-btn {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+
+
+
+
+.btn-custom7{
+  background: rgba(250, 213, 27, 1); 
+  color: #000; 
+  border: none; 
+  /* padding: 0.5rem 1rem;  */
+  border-radius: 1.5rem; 
+  font-weight: bold;
+  font-size: 1.3rem !important; 
+  align-items: center;
+  width: 251px !important;
+  margin-left: 50px !important;
+  /* margin-right: 18px !important; */
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+
+}
+
+.btn-custom3{
+  background: rgba(250, 213, 27, 1); 
+  color: #000; 
+  border: none; 
+  padding: 0.25rem 0.25rem; 
+  border-radius: 1.5rem; 
+  font-weight: bold;
+  font-size: 1.3rem !important; 
+  align-items: center;
+  width: 265px !important;
+  margin-left: 35px !important;
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  
+}
+        /* Custom styles directly within the HTML */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        /* .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            background-color: rgba(250, 213, 27, 1); ;
+            border: none;
+            cursor: pointer;
+        } */
+        .alert {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        /* .country-code {
+            width: 20%;
+            display: inline-block;
+            padding-right: 10px;
+        } */
+        /* .phone-number {
+            width: 100%;
+            display: inline-block;
+        } */
+        /* .flag {
+            width: 30px;
+            vertical-align: middle;
+        } */
+
+</style>
+
+
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickySetTop': '-70px', 'stickyChangeLogo': true}" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+				<div class="header-body border-0 box-shadow-none">
+					<div class="header-container container">
+						<div class="header-row py-2" style="height: 65px;">
+							<div class="header-column">
+								<div class="header-row d-flex align-items-center">
+									<div class="header-logo mb-0" style="margin-top: 4px;">
+										<a href="index.html">
+											<img alt="RM" width="150" height="50" src="img\WebImages\Frame 19.png">
+										</a>
+									</div>
+									<!-- <h1 class="ml-0 mb-0 gradient-bg-new2" style="font-weight:700;">ROUTE MAESTRO</h1> -->
+								</div>
+								
+							</div>
+							<div class="header-column"><div class="header-nav-bar z-index-0">
+								<div class="container">
+									<div class="header-row">
+										<div class="header-column">
+											<div class="header-row align-items-center justify-content-end" style="margin-top: -2px;margin-left: 107px;">
+												<div class="header-nav header-nav-links justify-content-start mb-3">
+													<div class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
+														<nav class="collapse">
+															<ul class="nav nav-pills" id="mainNav">
+																<li>
+																	<a class="nav-link" href="Home.html">
+																		Home
+																	</a>
+																</li>
+																<li>
+																	<a class="nav-link" href="Pricing.html">
+																		Pricing
+																		<!-- about us in actual -->
+																	</a>
+																</li>
+																<!-- <li class="dropdown">
+																	<a class="nav-link dropdown-toggle" href="demo-insurance-insurances.html">
+																		Insurances
+																	</a>
+																	<ul class="dropdown-menu">
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Auto Insurance</a></li>
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Life Insurance</a></li>
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Business Insurance</a></li>
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Travel Insurance</a></li>
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Home Insurance</a></li>
+																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Others</a></li>
+																	</ul>
+																</li> -->
+																<!-- <li>
+																	<a class="nav-link" href="demo-insurance-agents.html">
+																		Agents
+																	</a>
+																</li>
+																<li>
+																	<a class="nav-link" href="demo-insurance-blog.html">
+																		Blog
+																	</a>
+																</li> -->
+																<li>
+																	<a class="nav-link" href="Contact.html">
+																		Contact Us
+																	</a>
+																</li>
+																
+															</ul>
+														</nav>
+													</div>
+												</div>
+												<a href="#" class="position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold text-uppercase px-2 mb-3">Request A Demo</a>
+
+												<!-- <a href="#" class="position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold text-uppercase px-2 mb-3">Request A Demo</a> -->
+
+												<!-- <a href="#" class="position-relative top-2 btn-custom1 btn-outline btn-rounded text-2 font-weight-bold text-uppercase px-2 mb-3">Request A Demo</a> -->
+												<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+													<i class="fas fa-bars"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div></div>
+					
+						</div>
+					</div>					
+			
+				</div>
+			</header>
+			<div role="main" class="main">
+
+				<section class="section bg-transparent position-relative border-0 mt-5-5 p-0">
+					<div class="text-align-left p-4">
+					<h2 class="font-weight-bold text-color-dark text-7 mt-3 mb-3 text-center">Privacy Policy</h2>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;text-align: left;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;text-align: left;">
+                        RouteMaestro and its affiliates (collectively, “RouteMaestro,” “we,” “us,” and "our") respect your privacy. We are a travel management platform that helps companies manage all travel services as described in our Terms of Service. “You” may be a visitor to one of our Websites, a corporate customer of one or more of our Services (“Corporate Customer”), or an employee, traveler, or guest of a Corporate Customer (“Corporate Users”), or an independent business traveler ("Independent User").
+</br>
+This Privacy Policy describes the types of Personal Information we collect through our main website at RouteMaestro.com (“Website”) and through our travel products and services that we provide to Corporate Customers, Corporate Users, and Independent Users (“Services”). This Privacy Policy also describes how we use Personal Information, with whom we share it, your rights and choices, and how you can contact us about our privacy practices.
+				<hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Overview</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        RouteMaestro obtains Personal Information about you from various sources to manage our Website and provide our Services. There are two primary ways you may interact with RouteMaestro online.
+				<hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+					
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Website Visitors</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        Our Website at RouteMaestro.com is publicly available and allows visitors to learn more about RouteMaestro, request a demo, submit questions, join a discussion thread on our community pages, and contact us. Personal Information may be collected through webforms where you type in your information, comments you choose to post on our community discussion boards, or automatically using tracking technologies, like cookies.
+				<hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">RouteMaestro Services</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        Our Services include our web application at www.RouteMaestro.com. The web application provide the ability to search for and book travel, access traveler support, trip consolidation,and traveler customer support.
+
+                    </br></br> When you use our Services because one of our Corporate Customers (e.g., your employer, travel agency) has purchased the Services, and you use our Services to book travel or manage expenses, we collect, use, and disclose Personal Information about Corporate Users acting in our capacity as a “processor” or “service provider” to our Corporate Customers. RouteMaestro’s Customers are the controllers of this Personal Information and responsible for making sure that the Traveler’s privacy rights are respected, including ensuring appropriate disclosures about third-party data collection and use are made. When we act as a “processor” or “service provider” to our Corporate Customers, we process Personal Information in accordance with our Corporate Customer’s lawful instructions, the terms of the agreement we have with the RouteMaestro Customer, and consistent with this Privacy Policy.
+                        
+                </br></br> By contrast, when you use our Services to book personal travel (as opposed to RouteMaestro Business Travel) or when you respond to one of our surveys, we collect, use, and disclose Personal Information about Corporate Users acting in our capacity as a “controller” or “data owner.” Our Customers do not have access to the Personal Information you provide when you book personal travel, unless you choose to share that information with your employer. Similarly, when you use our Services as an Independent User, including booking independent business travel unrelated to our Corporate Customers, we collect, use, and disclose your Personal Information in our capacity as a “controller.” When we act as a “controller,” we process Personal Information consistent with this Privacy Policy.
+                        
+                      </br></br>  As a travel management platform, our Services may share your booking information with other parties to fulfill your travel reservations, including third-party websites, services or applications. This Privacy Policy does not apply to third-party websites, services, or applications, even if they are accessible through our Services, and you should consider the privacy practices of those third parties carefully.
+
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Personal Information</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        “Personal Information” is information that identifies you as an individual or relates to an identifiable individual. The types of Personal Information we collect vary according to your interactions with us, for example, depending on whether you are a visitor to our website, a Corporate Customer of RouteMaestro, or an employee of Customer using our Services. The Personal Information we collect from our Corporate Customers or Corporate Users booking business travel or using our payment services is “Corporate Customer Data,” and the Personal Information we collect from our Website visitors, Corporate Users booking personal travel, Independent Users, or otherwise apart from providing Services is “Other Information.”
+                         <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">How We Collect Personal Information You Provide to Us</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        Website Visitors. If you visit or use our Website, you can fill out web forms to ask for a demo, sign-up for a newsletter, register for a RouteMaestro event or account, or take a survey. The specific Personal Information you provide on these forms, as well as any Personal Information you choose to provide on our community discussion boards, will be treated as Other Information. For example, when you respond to RouteMaestro emails or surveys, or create a user account to participate in our community discussion boards, we collect your name, contact details, profile photo, and any other information you choose to include in your email, survey response, or account profile.
+
+                     </br></br>   RouteMaestro Services. When you use our Services, the Personal Information that you provide directly to us through our Services will be apparent from the context in which you provide the data. You may provide Personal Information to us when you book travel or use our expense management services. Personal Information may be provided to us directly by you or others, such as our Corporate Customer (e.g., your employer), a designated travel admin, or a traveling companion, on your behalf.
+                        
+                    </br></br> When you use RouteMaestro to register an account (“Account”) on our Services, we collect Personal Information, such as name, email, postal address, telephone number, financial data (payment card information and billing address), date of birth, gender, and emergency contact information (optional). When you use our Services for personal travel, we collect Personal Information such as your personal payment card information, billing address, and your personal email address. You may customize your travel profile by providing additional Personal Information, such as passport data, marital status, travel preferences, Known Traveler Number, TSA-Pre number, special meal preference, travel loyalty programs, and COVID-19-related health data.
+                        
+                </br></br>When you contact us for travel support by telephone, we collect Personal Information to verify your identification and help with your travel issue. In addition, we may record telephone calls between you and our representatives for training and quality assurance purposes. To the extent you may choose to provide us with feedback, suggestions, or recommendations about your experience, we collect that information and treat it as Other Information.
+                        
+            </br></br>Other Methods. You may also choose to submit Other Information to us via other methods, including in response to marketing or a survey, through social media or online forums, through participation in an offer or promotion, or by giving us your business card or contact details at trade shows or other events.     
+    
+
+          </br></br>  
+          <p class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;" style="font-size: 19px;">Information Automatically Collected</p>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        In addition to the information you provide when you visit our Website and use our Services, we automatically collect Other Information about how you access and interact with our Website and Services. This information is a key part of how we improve your experience on RouteMaestro and provide you with personalized insights, recommendations, and travel notices. These may include things like cookies, browser web storage, web beacons, and similar technologies. These technologies record information about your use of our Website and Services.
+
+                       </br></br> - Browser and Device Information. Certain information is collected by most browsers or automatically through your device, such as your Media Access Control (MAC) address, IP address for purposes of connecting, computer type (Windows or Mac), screen resolution, operating system name and version, device manufacturer and model, language, Internet browser type, add-ons, and version and the name of the website or app you are using. We use this information to ensure that our Website and Services function properly.
+                        
+                    </br></br>  - Log Information. When you use our Website, certain information is automatically collected in system logs about how you interact with our Website, such as your online activity, search terms, pages you visit, date and time of access, and cookie information, such as mouse clicks and keystrokes. This information is used to improve your experience on our Website and keep the Website free of bugs or errors. When you use our Services, we also may collect information about your online activity, such as trips viewed, travel reservations made, and other actions within our App. When you download and use one of our Apps, we and our service providers may track and collect App usage data, such as the date and time the App on your device accesses our servers and what information and files have been downloaded to the App based on your mobile device's identifier.
+                        
+                </br></br> - Cookies. RouteMaestro uses a variety of cookies and similar technologies on our Websites and Services to help us collect Other Information. For more details about how we use these technologies, and your opt-out opportunities and other options.
+                        
+            </br></br> - Geolocation. When you use certain features of the Services, we may collect certain information like IP address, device information, or log information to estimate your location (e.g., city or state) and to offer you an improved user experience and provide you with personalized location-based services, such as identifying nearby hotels, airports, or merchants. For RouteMaestro Expense, you have the option to share location information when uploading receipts. Most mobile devices allow you to control or disable the use of location services for applications in the device settings menu.
+
+        </br></br>  
+
+        <p class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;" style="font-size: 19px;">Information From Third Parties</p>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        We may obtain and rely on Personal Information about you from third parties and other sources, such as our business partners, Corporate Customers, and other Corporate and Independent Users of our Services. For example, RouteMaestro Customers may provide Personal Information about Corporate Users when they create new Accounts for their employees or guests. Organizers of meetings and events may share Personal Information when they are organizing RouteMaestro Group Travel for attendees. Corporate and Independent Users may provide Personal Information about their travel companions when booking personal travel. We may also work with different third-party partners to supplement information we collect directly from you.
+
+                    </br></br>As a travel management platform, when we conduct fraud monitoring, prevention, and detection activities, we may also receive Other Information about you from our business partners, financial service providers, identity verification services, and publicly available sources as necessary to confirm your identity and prevent fraud.
+
+                </br></br>If you disclose any Personal Information relating to other people to us or to our service providers in connection with our Services, you represent and warrant that you have the authority to do so and to permit us to use the information in accordance with this Privacy Policy and/or any other agreements we may have with you.
+                       
+
+    <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">How We Use Personal Information</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        We use the information we collect from you and third parties to operate our Website and Services, communicate with you, conduct research and development to improve our Website and Services, and promote our Services.
+
+
+</br></br>                        RouteMaestro Services for Corporate Customers. RouteMaestro uses Corporate Customer Data for the purpose of providing our Services to Corporate Customers to enable their employees to book business travel and manage expenses. Corporate Customer Data will be used by RouteMaestro in accordance with Corporate Customer’s instructions, including any applicable terms in our agreements with our Corporate Customers, and as required by law. RouteMaestro is a processor of Personal Information and Corporate Customer is the controller. Some examples of how we use Corporate Customer Data:
+
+</br></br> - Account Information. To create, maintain, and secure accounts, including customizing your travel profile.
+
+</br></br> - Reservations. To complete travel bookings, process your payments, provide travel confirmations, provide notifications and updates, and verify your information.
+
+</br></br> - Services Communications. To communicate with you regarding travel interruptions, flight changes, delays, travel alerts and restrictions, and cancellations; respond to inquiries and questions; and notify you of updates to our Services, product updates, and service announcements. Communications may be sent via email, push notifications, browser notifications, SMS, and postal mail.
+
+</br></br> - Payments and Expenses. To track and submit travel or other business expenses, reconcile expense reports, link to personal accounts for expense submission and reimbursement, and manage expenses.
+
+</br></br> - Corporate Customer Support. To provide customer support when you contact us via chat, telephone, or email. We use this Corporate Customer Data to verify your identity and retrieve travel records related to your inquiries.
+
+</br></br> - Providing Personalized Services. To personalize your experience on our Services, such as to curate booking recommendations, identify nearby hotels and airports, record travel meal and seating preferences, and optimize search results.
+
+</br></br> We provide these personalized services in RouteMaestro Services for Corporate Users Booking Personal Travel and Independent Users. RouteMaestro uses Other Information for the purpose of providing our Services to Corporate Users booking personal travel and Independent Users booking their own travel. RouteMaestro is the controller of Other Information and uses it, for example, as follows:
+
+</br></br> - Account Information. To create, maintain, and secure accounts, in order to manage our contractual relationship with you and/or to comply with a legal obligation.
+
+</br></br> - Reservations. To complete travel bookings, process your payments, provide travel confirmations, provide notifications and updates, and verify your information, in order to manage our contractual relationship with you or to comply with a legal obligation.
+
+</br></br> - Services Communications. To communicate with you regarding travel interruptions, flight changes, delays, travel alerts and restrictions, and cancellations; respond to inquiries and questions; and notify you of updates to our Services, product updates, and service announcements. Communications may be sent via email, push notifications, browser notifications, SMS, and postal mail. We engage in these communications to manage our contractual relationship with you, where we have a legitimate interest, or to comply with a legal obligation.
+
+</br></br> - Payments and Expenses. To track and submit travel or other business expenses, reconcile expense reports, link to personal accounts for expense submission and reimbursement, and manage expenses, in order to manage our contractual relationship with you, where we have a legitimate interest, or to comply with a legal obligation.
+
+</br></br> - Traveler Support. To provide traveler support when you contact us via chat, telephone, or email. We use Other Information to verify your identity and retrieve travel records related to your inquiries. We engage in travel support in order to manage our contractual relationship with you or where we have a legitimate interest.
+
+</br></br> - Providing Personalized Services. To personalize your experience on our Services, such as to curate booking recommendations, identify nearby hotels and airports, record travel meal and seating preferences, customize your travel profile, and optimize search results. We provide these personalized services based on our legitimate interests, and with your consent to the extent required by applicable law.
+
+</br></br> Accomplishing Our Business Purposes. RouteMaestro uses Other Information in furtherance of our legitimate interest in operating our Services, Websites, and business, as well as to comply with our legal obligations. Our business purposes include:
+
+</br></br> - Data analysis to improve our Services, develop new products and services, enhance, modify, and maintain our current products and Services, as well as undertaking quality and safety assurance measures;
+
+</br></br> - Security of our Website and Services. To protect the safety, integrity of our Corporate Customers and our Corporate and Independent Users, including monitoring, detecting, and preventing fraud, cyberattacks, attempts to commit identity theft, and unauthorized or illegal use of our Website or Services;
+
+</br></br> - Identification of usage trends. To better understanding which parts of our Services are of most interest to users and focus our energies on meeting our users’ interests;
+
+</br></br> - Determine the effectiveness of our promotional campaigns, so that we can adapt our campaigns to the needs and interests of our users;
+
+</br></br> - Audits. To verify that our internal processes function as intended and to address legal, regulatory, or contractual requirements;
+
+</br></br> - Aggregated reports. To analyze and/or predict preferences in order to prepare aggregated trend reports on how our Website and Services are used, so we can improve our Website and Services.
+
+</br></br> Legal compliance. We use Other Information to verify the identity of our Corporate and Independent Users and Corporate Customers in order to comply with fraud monitoring, prevention and detection obligations, laws associated with the identification and reporting of illegal and illicit activity, such as AML (Anti-Money Laundering) and KYC (Know-Your-Customer) obligations, and financial reporting obligations. For example, we may be required to record and verify user identity for the purpose of compliance with legislation intended to prevent money laundering and financial crimes. These obligations are imposed on us by the operation of law, industry standards, and by our financial partners, and may require us to report our compliance to third parties, and to submit to third party verification audits.
+
+</br></br> Marketing and Events-Related Communications. When you use our Website or Services, we may use Other Information to send you marketing communications about our Services, products and features, and other news about RouteMaestro. Marketing communications may invite you to participate in our events, product demos, beta program, or surveys. We will engage in marketing activities with your consent or where we have a legitimate interest.
+
+</br></br> Emails from RouteMaestro with updates and offers when you opt-in to marketing. You can choose to receive emails containing updates and offers tailored to your interests, such as our newsletter. These emails contain offers for our own services and services offered by our travel partners. With your consent, we will also send you emails on specific occasions, such as a special offer on your birthday or personalized offers for your next trip within a few months after your return.
+
+</br></br> RouteMaestro Events. When you participate in trade shows or other events, we may collect Other Information, such as your business contact details, to follow-up with you regarding an event, offer a demo of our Services, send you information that you requested, and, with your permission, include you on our marketing campaigns.
+
+</br></br> Consent. We may use Personal Information for other purposes that are clearly disclosed to you at the time you provide Personal Information or with your consent.
+
+</br></br> Aggregated and De-Identified Personal Information. We may aggregate and/or de-identify Personal Information such that it is no longer considered Personal Information. We do so to generate other data for our use, which we may use and disclose for any purpose, as it no longer identifies you or any other individual. We engage in these activities based on our legitimate interest.
+<hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">How We Disclose Personal Information</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        We disclose your Personal Information in connection with providing our Services and the operation of our business.
+
+</br></br> RouteMaestro. We share Personal Information with other RouteMaestro entities in order to provide our Services and for internal administration purposes.
+
+</br></br> RouteMaestro Corporate Customers. As a corporate travel management platform, we share Corporate Customer Data, such as Traveler Personal Information related to business travel, with the Corporate Customer who has made our Services available to the user. Information may include business travel bookings and details, business travel status, business expenses, profiles, current locations (based on business travel itinerary), travel preferences, business payments and transactions history. Only travel bookings designated as business are accessible by the Traveler’s employer.
+
+</br></br> Service Providers. We share Corporate Customer Data and Other Information with a limited number of our service providers. We have service providers that provide services on our behalf, such as website hosting, data analysis, credit card payment processors, billing services, business analytics, distribution of surveys or sweepstakes programs, information technology and related infrastructure, customer service, email delivery, identity verification, auditing, and fraud protection.
+
+</br></br> Business Partners and Providers of Travel Services. We may share Corporate Customer Data and Other Information with third-party business partners when this is necessary to provide our Services. Third parties to whom we may disclose Personal Information include airlines, hotels, rail, rental car companies, travel networks and agencies in order to make the travel bookings you requested. Please note that the business partners are typically third-party controllers and that information we provide may be subject to and processed according to the receiving third party’s privacy policy. If your booking is made via a reservation system provider ("GDS"), it will be processed according to its privacy policy available at http://www.iatatravelcenter.com/privacy. Where a booking is made via the Amadeus GDS, to provide the services, your Personal Information may be processed by Amadeus IT Group, S.A. You should read this documentation, which applies to your booking and specifies, for example, how your personal data is collected, stored, used, disclosed and transferred. We are not responsible for the privacy and security practices of these third parties.
+
+</br></br> Your Choice to Disclose Personal Information. By participating in any community discussion boards, blogs, or other services to which you are able to post information and content, you may choose to disclose Personal Information. Please note that any information you post or disclose through these services will become public and may be available to other users and the general public.
+
+</br></br> Legal Compliance and Obligations. We share Personal Information as necessary or appropriate (i) to comply with applicable laws and regulation which may include laws outside your country of residence; (ii) to protect the rights, privacy, safety, and property of our Corporate Customers, you, others, or RouteMaestro and to enforce our Terms of Service; (iii) to collect amounts owed to us, and (iv) to respond to requests from courts, law enforcement agencies, regulatory agencies, and other public and government authorities (including national security requests) which may include authorities outside your country of residence.
+
+</br></br> Corporate Transactions. We may disclose or transfer Personal Information to a third party in the event we enter into, or intend to enter into, a transaction that alters the structure of our business, such as a reorganization, merger, sale, joint venture, assignment, transfer, or disposition of all or any portion of our business, assets, or stock (including in connection with any bankruptcy or similar proceedings).
+
+</br></br> Underwriting/Risk management. We share Personal Information of our Corporate Customers who are purchasing RouteMaestro services with third parties for the purposes of setting credit limits and managing financial risk.
+                       
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Your Rights and Choices</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        You have choices regarding our use and disclosure of your Personal Information. You may opt out from:
+
+                       </br></br> - Receiving marketing-related emails from us. If you no longer want to receive marketing-related emails from us, you may opt-out via the “unsubscribe” link included in such emails. Please note that if you opt-out of receiving marketing-related emails from us, we may still send you important administrative messages that are required to provide you with our Services, from which you cannot opt-out. We will try to comply with your request(s) as soon as reasonably practicable.
+                        
+                    </br></br>- Receiving Travel Alerts from Us. You can manage your communication preferences by visiting your Account Profile and then Settings. You can choose which types of travel alerts to receive and the method for receiving the alerts. You may also opt-out of SMS alerts in your Account Settings.
+                        
+                </br></br>- Our Use of Certain Cookies. You can manage some of the cookies we use on our Website and Services by visiting our Cookie Policy.
+                        
+            </br></br>Accessing and Changing Your Personal Information. You may access, update, correct, or delete your profile information and preferences at any time by logging in to your Account through our Apps.
+                        
+        </br></br>  Your Data Protection Rights. In accordance with applicable law and depending on where you reside, you may have the right to: (i) request confirmation of whether we are processing your Personal Information; (ii) obtain access to or a copy of your Personal Information; (iii) receive an electronic copy of Personal Information that you have provided to us, or ask us to send that information to another company (the “right of data portability”); (iv) object to or restrict our uses of your Personal Information; (v) seek correction or amendment of inaccurate, untrue, incomplete, or improperly processed Personal Information; (vi) withdraw your consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal; and (vii) request erasure of Personal Information held about you by us, subject to certain exceptions prescribed by law.
+                        
+    </br></br>      If you would like to exercise any of these rights, please email us at privacy@RouteMaestro.com or contact us as specified in the Contact Us section below. We will respond to your request consistent with applicable law and as soon as reasonably practicable. To protect your privacy, we will verify your request using the information associated with your account, including email address.
+                        
+</br></br>          Please note that if you use our Services on behalf of an organization that is our Customer (e.g., your employer), that Customer may be responsible for fulfilling the rights listed above.
+                      
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Security And Retention</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        We maintain commercially reasonable technical and organizational measures designed to protect Personal Information within our organization. Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure. If you have reason to believe that your interaction with us is no longer secure, please Contact Us immediately.
+
+                    </br></br> We retain Personal Information for as long as needed or permitted in light of the purpose(s) for which it was obtained and consistent with applicable law. If you are a Corporate Customer or a Corporate or Independent User, we retain your Personal Information as long as we are providing Services to you. We may retain Personal Information and certain records of your transactions to the extent necessary to comply with our legal and regulatory obligations. We may also retain Personal Information in light of our legal position such as in regard to applicable statute of limitations, litigation, or regulatory investigations.
+
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Links to Other Websites</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+
+                        The Website and Services may provide the ability to connect to third-party websites or other online services. These third-party websites and services operate independently from us. This Privacy Policy does not address, and we are not responsible for, the privacy, information, or other practices of any third parties, including any third party operating any website or service to which the Website and Services link. The inclusion of a link does not imply endorsement of the linked site or service by us or by our affiliates.
+
+                    </br></br>        In addition, we are not responsible for the information collection, use, disclosure, or security policies or practices of other organizations, such as Facebook, Apple, Google, Microsoft, or any other app developer, app provider, social media platform provider, operating system provider, wireless service provider, or device manufacturer, including with respect to any Personal Information you disclose to other organizations through or in connection with our Apps or social media pages.
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Use of Services and Website by Minors</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        Our Website and Services are not directed to individuals under the age of sixteen (16), and we do not knowingly collect Personal Information from individuals under 16.
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Sensitive Information</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        Unless we request it, we ask that you not send us, and you not disclose, any sensitive Personal Information (e.g., social security numbers, information related to racial or ethnic origin, political opinions, religion or other beliefs, health, biometrics or genetic characteristics, criminal background, or trade union membership) on or through the Services or Website, or otherwise to us.
+
+In order to offer certain services, we may gather information that falls under the category of sensitive data or special category of data as defined by relevant data protection laws. However, it is important to note that the collection of this data is completely optional. For instance, you have the choice to specify your meal preference, which could indirectly reveal details about your ethnic origin, religious beliefs, or health status as per Article 9 of the GDPR. This information is only collected with your consent in order to provide the information to our travel partners. At any point, you can remove this information from your profile.
+                        
+                        <hr style="margin-top:2px;margin-bottom: -15px;">
+				</div>
+
+                <div class="text-align-left p-4">
+					<h3 class="font-weight-bold text-color-dark mt-3 mb-3 text-align: left;">Updates to This Privacy Policy</h3>
+					<!-- <p class="text-black" style="font-size: 19px;font-weight:500;">Last Updated: June 12, 2023</p> -->
+					<p class="text-black" style="font-size: 16px;">
+                        We reserve the right to change this Privacy Policy at any time to reflect new services, changes in our Personal Information practices or relevant laws. If we make material changes, we will notify you as required by applicable law. The “Last Updated” legend at the top of this Privacy Policy indicates when this Privacy Policy was last revised. Any changes will become effective when we post the revised Privacy Policy.
+<hr style="margin-top:2px;margin-bottom: -15px;">
+</div>
+
+
+
+				</section>
+			</div>
+
+
+
+			<div style="background: #07072C; height: 450px;">
+
+				<footer id="footer" class="position-relative bg-transparent border-top-0">
+					<!-- <div style="background: #07072C;"> -->
+					<svg version="1.1" class="custom-svg-position-4" width="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 393.35 539.93" data-appear-animation-svg="true">
+						<path class="appear-animation" data-appear-animation="customLines1anim" data-appear-animation-delay="450" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M28.37,469.29c2.49-4.63,6.2-10.92,11.4-17.87c15.63-20.86,33.61-32.82,43.74-38.64
+							c26.56-15.25,50.74-17.9,60.77-18.89c4.57-0.45,10.99-0.53,23.83-0.68c36.32-0.43,40.17,1.96,58.38,0.17
+							c9-0.89,23.27-2.39,40.51-9.02c11.47-4.41,24.18-9.3,35.91-21.62c4.47-4.69,13.9-14.84,17.7-30.98c4.25-18.05-1.07-32.85-4.26-41.7
+							c-5.13-14.26-12.31-23.35-20.09-33.02c-14.72-18.31-21.46-19.69-47.32-45.28c-13.18-13.04-19.91-19.77-27.06-29.96
+							c-8.26-11.77-18.02-25.68-21.28-46.3c-3.02-19.16,1.11-34.41,3.4-42.55c5.08-17.99,13.63-30.88,19.4-38.3"/>
+						<path class="appear-animation" data-appear-animation="customLines1anim" data-appear-animation-delay="600" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M251.86,1.54c-2.79,4.55-6.74,11.14-11.23,19.23c-10.16,18.31-15.49,27.92-19.4,40
+							c-6.53,20.17-5.91,37.39-5.62,42.55c0.27,4.8,1.9,28.1,16.68,53.45c7.02,12.04,16.31,21.42,34.89,40.17
+							c8.7,8.78,8.8,8.28,37.28,35.4c19.69,18.76,24.27,23.4,29.96,31.66c4.02,5.83,11.13,17.14,16.51,32.85
+							c4.13,12.06,7.49,21.87,6.64,35.23c-1.1,17.25-8.52,29.48-11.57,34.38c-10.54,16.92-24.6,25.2-34.38,30.81
+							c-23.97,13.74-46.66,16.04-64.85,17.7c-13.03,1.19-11.92-0.08-50.72,0c-30.21,0.06-45.31,0.09-54.81,1.53
+							c-35.14,5.33-59.22,19.59-64.51,22.81c-4.7,2.87-22.2,13.85-39.83,33.87c-9.91,11.26-16.88,21.97-21.62,30.3"/>
+						<path class="appear-animation" data-appear-animation="customLines1anim" data-appear-animation-delay="450" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M21.4,486.48c2.43-4.47,5.99-10.49,10.89-17.19c4.56-6.23,17.13-22.38,38.64-36.94
+							c18.11-12.25,34.84-18.16,44.26-20.94c19.22-5.68,34.55-6.05,65.19-6.81c22.03-0.54,23.98,0.75,45.96-0.34
+							c30.37-1.51,41.85-4.73,45.96-5.96c8.55-2.56,22.15-6.77,36.43-17.7c7.25-5.55,17.31-13.26,24.17-27.4
+							c7.69-15.85,6.81-30.45,6.3-37.62c-1.35-18.73-8.81-32.01-14.3-41.53c-1.63-2.83-7.11-12.08-24.51-30.64
+							c-17.71-18.89-23.21-21.22-43.57-41.19c-18.87-18.51-28.31-27.77-34.72-39.15c-14.17-25.16-14.48-48.64-14.47-53.79
+							c0.06-18.92,5.49-33.24,9.02-42.38c5.14-13.32,11.47-23.6,16.51-30.68"/>
+						<path class="appear-animation" data-appear-animation="customLines1anim" data-appear-animation-delay="600" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M239.27,25.12c-1.17,2.11-2.75,5.07-4.47,8.68c-2.36,4.94-7.66,16.06-10.47,28.72
+							c-3.53,15.91-1.97,29.02-1.02,36.38c2.68,20.94,10.24,35.77,14.55,44.04c9.35,17.94,19.67,29.07,32.81,43.02
+							c19.26,20.45,23.51,19.93,47.23,43.4c17,16.82,26.71,26.54,36.77,42.51c8.86,14.06,18.12,29.14,20.04,50.81
+							c0.61,6.92,1.86,23.15-6,41.23c-9.11,20.95-24.94,31.75-35.11,38.68c-19.84,13.53-39.05,17.58-52.6,20.3
+							c-10.9,2.19-18.73,2.66-31.79,3.45c-25.76,1.55-34.35-0.54-61.79-0.13c-18.14,0.27-27.93,0.42-41.11,2.3
+							c-13.25,1.89-37.65,5.6-65.36,20.3c-29.6,15.7-46.94,35.44-51.83,41.23c-10.02,11.87-16.67,23.12-20.94,31.4"/>
+						<path class="appear-animation" data-appear-animation="customLines1anim" data-appear-animation-delay="450" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M0.67,538.69c0.95-1.71,2.34-4.15,4.09-7.02c11.96-19.63,24.46-32.62,28.98-37.15
+							c15.57-15.61,30.82-25.49,40.72-31.15c9.07-5.18,24.93-13.26,46.09-18.89c18.57-4.95,32.81-5.77,50.17-6.77
+							c16.47-0.95,18.38,0,54.38,0c26.4,0,39.82-0.03,50.81-1.4c12.86-1.61,30.09-3.88,50.55-12.64c11.2-4.79,24.83-10.77,38.43-24
+							c6.21-6.04,16.47-16.24,22.47-33.06c4.92-13.78,4.61-25.35,4.34-32.81c-0.77-21.33-7.97-36.9-12.51-46.47
+							c-8.94-18.82-19.41-30.64-32.17-44.81c-9.84-10.92-12.11-11.88-44.3-42c-28.9-27.05-32.97-31.8-35.87-35.36
+							c-8.92-10.95-20.3-25.17-28.34-46.98c-2.77-7.52-11.81-32.78-7.91-59.11c0.78-5.28,2.71-14.86,6.51-25.79
+							c2.36-6.79,4.83-12.33,6.77-16.34"/>
+					</svg>
+	
+					<div class="container pt-5-5 pb-3">
+						<div class="row gy-3 d-flex justify-content-start">
+							<!-- Column 1: Logo -->
+							<div class="col-lg-4 mt-5-5" style="margin-top: 25px !important;">
+								<div style="display: flex; align-items: center; justify-content: center;">
+									<img alt="RM" width="50" height="50" style="margin-bottom: 10px;" src="img/WebImages/image (2).png">
+									<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
+								</div>
+							</div>
+							<!-- Column 2: Customer Service -->
+							<div class="col-lg-4" style="margin-top: 30px;">
+								<h3 class="font-weight-bold" style="color:#A733FF;">CUSTOMER SERVICE</h3>
+								<ul class="list list-unstyled">
+									<li style="margin-left: 30px;"><a href="Privacy.html" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Privacy Policy</a></li>
+									<!-- <li><a href="#" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Order Checkout</a></li> -->
+									<!-- <li><a href="#" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Shipping & Delivery</a></li> -->
+									<li style="margin-left: 30px;"><a href="TermsConditions.html" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Terms & Conditions</a></li>
+									<li style="margin-left: 30px;"><a href="Refund.html" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Refund & Cancellation</a></li>
+									<li style="margin-left: 30px;"><a href="Contact.html" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Contact Us</a></li>
+									<li style="margin-left: 30px;"><a href="Pricing.html" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Pricing</a></li>
+									<!-- <li><a href="#" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Careers</a></li> -->
+									<!-- <li><a href="#" class="text-color-grey text-color-hover-primary" style="color:white !important;font-size: 16px;">Corporate Sales</a></li> -->
+								</ul>
+							</div>
+							<!-- Column 3: Catch Us On Social Media -->
+							<div class="col-lg-4" style="margin-top: 30px;"> 
+								<h3 class="font-weight-bold mb-3" style="color:#A733FF;">CATCH US ON SOCIAL MEDIA</h3>
+								<ul class="social-icons social-icons-clean social-icons-medium" style="color: white;">
+									<li class="social-icons-instagram">
+										<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="social-icons-twitter">
+										<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li class="social-icons-facebook">
+										<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- </div> -->
+					
+					<div class="footer-copyright bg-transparent">
+						<hr style="border: 1px solid #ffffff;" />
+						<div class="container">
+							
+							<div class="row">
+								<div class="col mt-2 mb-2">
+									<p class="text-center text-3 mb-0 text-white" style="font-size:large !important;">© RouteMaestro. All Rights Reserved.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</footer>
+			</div>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+	</body>
+</html>
