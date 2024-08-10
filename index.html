@@ -192,6 +192,9 @@
     background-repeat: no-repeat;     /* Prevents repeating the image */
     /* background-attachment: fixed; 
 	     */
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    border-radius: 10px;
 }
 
 .btn-custom1{
@@ -329,6 +332,105 @@ background: rgba(250, 213, 27, 1);
     right: -53px;
     margin: 10px; /* Adjust the margin as needed */
 }
+
+  @media (max-width: 1200px) {
+    .section1 {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 15px !important;
+      margin-right: 15px !important;
+    }
+
+    .section1 .container {
+      height: auto;
+    }
+
+    .section1 .row {
+      height: auto;
+    }
+
+    .section1 .text-xl-start {
+      text-align: center !important;
+    }
+
+    .section1 h2 {
+      font-size: 36px;
+      margin-left: 0 !important;
+    }
+
+    .section1 p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .section1 {
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .section1 .row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section1 .col-xl-7, .section1 .col-xl-5 {
+      max-width: 100%;
+      flex: 0 0 100%;
+      text-align: center !important;
+    }
+
+    .section1 .text-xl-start {
+      text-align: center !important;
+    }
+
+    .section1 h2 {
+      font-size: 32px;
+      margin: 0 auto;
+    }
+
+    .section1 p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section1 {
+      margin: 0 !important;
+      padding: 20px 10px;
+    }
+
+    .section1 h2 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .section1 p {
+      font-size: 12px;
+    }
+
+    .section1 .container {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .section1 {
+      padding: 10px;
+    }
+
+    .section1 h2 {
+      font-size: 24px;
+    }
+
+    .section1 p {
+      font-size: 12px;
+    }
+  }
+
+
 
 
 		</style>
@@ -495,7 +597,7 @@ background: rgba(250, 213, 27, 1);
 			</header>
 
 			<div role="main" class="main">
-                <div class="gradient-bg-new" style="height: 500px;">
+                <div class="gradient-bg-new" style="height: 550px;">
 				<section class="section position-relative border-0 m-0" style="background-position: center; background-size: cover;">
 					<div class="container position-relative pb-5 mb-5">
 						<!-- <svg class="d-none d-lg-block custom-svg-position-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1686.88 1095.86" data-appear-animation-svg="true">
@@ -568,15 +670,16 @@ background: rgba(250, 213, 27, 1);
 								c16.75,14.41,43.12,36.7,83.74,51.91c5.94,2.23,33.77,12.38,72.34,15.32c28.74,2.19,53.04-0.43,70.64-3.57"/>
 						</svg> -->
 
-						<img height="850" width="680" src="img\WebImages\devicestab.png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: 18px; margin-right: 1px;" />
+						<img height="800" width="850" src="img\WebImages\dd.png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: -16px; margin-right: -90px;" />
 						<div class="row align-items-center pb-5 mb-4">
 							<div class="col-lg-5">
 								<h2 class="font-weight-bold text-color-light custom-big-text-1 ws-nowrap pt-5 pb-5-5 mb-1 my-md-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
 									<!-- <span class="d-none d-lg-block">ROUTE MAESTRO</span> -->
 								</h2>
 								<div class="text-white font-weight-bold text-12 line-height-2 appear-animation text-center" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="margin-top: -100px !important;">Ignite Your Tourism</br> Business Success</div>
-								<h1 class="text-white text-5-6 font-weight-medium mb-4-5 appear-animation mt-3 text-center" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">With our AI Powered Holiday Planning Engine </br>Designed For Instant Client Conversions</h1>
-								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" id="openModalBtn">Request A Demo</a>
+								<h1 class="text-white font-weight-normal mb-4-5 appear-animation mt-3 text-center" style="font-size: 24px;letter-spacing: 0.03px;line-height: normal;" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">With our AI Powered Holiday Planning Engine </br>Designed For Instant Client Conversions</h1>
+								<!-- <a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" id="openModalBtn">Request A Demo</a> -->
+								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" >Request A Demo</a>
 								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mb-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Get In Touch</a>
 
 							</div>
@@ -644,7 +747,7 @@ background: rgba(250, 213, 27, 1);
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">GEAT A QUOTE</a> -->
 							</div>
 							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5" style="margin-left: 50px !important;">
-								<img src="img\WebImages\realtime.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database" />
+								<img src="img\WebImages\inventory.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database" />
 							</div>
 						</div>
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
@@ -774,7 +877,7 @@ background: rgba(250, 213, 27, 1);
 							<h3 class="text-white text-transform-none text-5-6 font-weight-semibold mb-3 mt-4" style="text-decoration: underline;">Travel Companies & Agents</h3>
 							<p class="text-3 mb-0 text-white">RouteMaestro’s AI generates Door-To-Door Traveller Personalized Trips in under 2 Minutes, reducing operational costs & enhancing Profit Margins for agents.</p>
 						</div>
-						<div class="col-md-3 col-lg-3 text-center appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
+						<div class="col-md-3 col-lg-3 text-center appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100">
 							<img width="50" height="50" src="img\WebImages\DMC.png" alt="DMC" />
 							<h3 class="text-white text-transform-none text-5-6 font-weight-semibold mb-3 mt-4" style="text-decoration: underline;">DMCs / DMOs</h3>
 							<p class="text-3 mb-0 text-white">DMC’s, DMO’s can integrate RouteMaestro onto their own platform seamlessly to enhance convenience & get preferred by their partners, agents to generate Personalized Trips in 2 Minutes.</p>
@@ -882,7 +985,7 @@ background: rgba(250, 213, 27, 1);
 
 				<section class="section1 section-height-3 position-relative z-index-1 border-0 m-0 mt-5-5 px-4 py-4 mb-5 mt-5" style="margin-left: 30px !important;margin-right: 30px !important;border-radius:10px;">
 				
-					<div class="container" style="height: 320px;">
+					<div class="container" style="height: 400px;">
 					  <div class="row align-items-center" style="height: 250px;">
 						
 						<div class="col-xl-7 text-center text-xl-start">
@@ -891,8 +994,8 @@ background: rgba(250, 213, 27, 1);
 						</div>
 						<div class="col-xl-5">
 						  <div class="d-flex flex-column align-items-center justify-content-center h-90 mt-4 px-4 py-4">
-							<h3 class="text-center text-color-light font-weight-medium text-8 mb-5-5 mt-2" style="line-height: 1;"> <strong>Travel as-a-Service Platform</h3>
-							<p class="text-center text-color-light mb-4 text-4 text-center line-height-3">Unlock the travel world with our cutting-edge technology solution, which revolutionizes the travel industry by delivering an unparalleled travel experience, simplifying travel arrangements, and fostering innovation for future business growth.  </p>
+							<h2 class="text-left text-color-light mb-5-5 mt-2" style="line-height: 1; font-size: 44px; margin-left: -135px;"><strong> Travel as-a-</br>Service Platform</strong></h2>
+							<p class="text-left text-color-light mb-4 text-4 line-height-3">Unlock the travel world with our cutting-edge technology solution, which revolutionizes the travel industry by delivering an unparalleled travel experience, simplifying travel arrangements, and fostering innovation for future business growth.  </p>
 							<!-- <a href="#" class="btn btn-custom3 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 30px;">Get In Touch To Know More!</a> -->
 						  </div>
 						</div>
@@ -1081,7 +1184,7 @@ background: rgba(250, 213, 27, 1);
 						<!-- Column 1: Logo -->
 						<div class="col-lg-4 mt-5-5" style="margin-top: 25px !important;">
 							<div style="display: flex; align-items: center; justify-content: center;">
-								<img alt="Route Maestro" width="50" height="50" style="margin-bottom: 10px;" src="img/WebImages/image (2).png">
+								<img alt="Route Maestro" width="50" height="50" style="margin-bottom: 10px;" src="img\WebImages\footerlogonew.png">
 								<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
 							</div>
 						</div>
