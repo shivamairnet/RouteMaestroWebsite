@@ -333,105 +333,157 @@ background: rgba(250, 213, 27, 1);
     margin: 10px; /* Adjust the margin as needed */
 }
 
-  @media (max-width: 1200px) {
-    .section1 {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: 15px !important;
-      margin-right: 15px !important;
-    }
 
-    .section1 .container {
-      height: auto;
-    }
 
-    .section1 .row {
-      height: auto;
-    }
+/* media query for header */
+@media (max-width: 767px) {
+  .btn-custom1 {
+    display: none;
+  }
+}
 
-    .section1 .text-xl-start {
-      text-align: center !important;
-    }
 
-    .section1 h2 {
-      font-size: 36px;
-      margin-left: 0 !important;
-    }
-
-    .section1 p {
-      font-size: 16px;
-    }
+/* Media Query for Mobile Devices for the zigzag section */
+@media (max-width: 767px) {
+  /* Center-align text and images in columns */
+  .col-lg-5, .col-lg-6 {
+    text-align: center; /* Center-align text and images */
   }
 
-  @media (max-width: 992px) {
-    .section1 {
-      margin-left: 10px !important;
-      margin-right: 10px !important;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .section1 .row {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .section1 .col-xl-7, .section1 .col-xl-5 {
-      max-width: 100%;
-      flex: 0 0 100%;
-      text-align: center !important;
-    }
-
-    .section1 .text-xl-start {
-      text-align: center !important;
-    }
-
-    .section1 h2 {
-      font-size: 32px;
-      margin: 0 auto;
-    }
-
-    .section1 p {
-      font-size: 14px;
-    }
+  /* Center-align images */
+  .col-lg-5 img, .col-lg-6 img {
+    display: block; /* Ensure image is block-level */
+    margin-left: auto;
+    margin-right: auto; /* Center-align images */
   }
 
-  @media (max-width: 768px) {
-    .section1 {
-      margin: 0 !important;
-      padding: 20px 10px;
-    }
-
-    .section1 h2 {
-      font-size: 28px;
-      line-height: 1.2;
-    }
-
-    .section1 p {
-      font-size: 12px;
-    }
-
-    .section1 .container {
-      padding: 0;
-    }
+  /* Remove side margins in columns for mobile view */
+  .col-lg-5, .col-lg-6 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  @media (max-width: 576px) {
-    .section1 {
-      padding: 10px;
-    }
+  /* Ensure headings and paragraphs are centered */
+  .col-lg-5 h2, .col-lg-6 h2,
+  .col-lg-5 p, .col-lg-6 p {
+    text-align: center;
+  }
+}
 
-    .section1 h2 {
-      font-size: 24px;
-    }
-
-    .section1 p {
-      font-size: 12px;
-    }
+/* media query for the footer section */
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  #footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+	
   }
 
+  #footer .container {
+    padding-right: 15px;
+    padding-left: 15px;
+	height: 450px !important;
+	background-color: #07072C !important;
+  }
 
+  #footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #footer .col-lg-4 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #footer .font-weight-bold {
+    font-size: 1.25rem;
+  }
+
+  #footer .text-3 {
+    font-size: 1rem;
+  }
+
+  /* Adjust logo size and text */
+  #footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #footer p {
+    font-size: large !important;
+  }
+
+  #footer .footer-copyright hr {
+    /* border: 1px solid #ffffff !important; */
+    width: 100% !important; /* Ensure it spans full width */
+    margin: 1rem 0 !important; /* Adjust margin for spacing */
+  }
+
+  #footer .footer-copyright .text-3 {
+    font-size: 1rem !important;
+  }
+
+  #footer .social-icons {
+    text-align: center; /* Center-align social icons */
+  }
+
+  #footer .social-icons li {
+    display: none;
+  }
+
+  #footer .social-icons i {
+	display: none;
+    /* font-size: 24px;  */
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .section {
+    padding: 20px !important; /* Add padding or adjust as needed */
+  }
+
+  .unique-container {
+    height: auto !important; /* Allow container to adjust height automatically */
+  }
+
+  .unique-container .row {
+    flex-direction: column !important; /* Stack columns vertically on small screens */
+    align-items: center !important; /* Center align items */
+  }
+
+  .unique-container .col-xl-6,
+  .unique-container .col-xl-5 {
+    width: 100% !important; /* Make columns full-width */
+    margin-top: 0 !important; /* Remove top margin for better spacing */
+  }
+
+  .unique-container .col-xl-6 img {
+    height: 30px !important; /* Adjust image height for smaller screens */
+    width: auto !important; /* Maintain aspect ratio */
+  }
+
+  .unique-container .text-color-light {
+    font-size: 1.2rem !important; /* Adjust font size for better readability */
+  }
+
+  .unique-container .btn-custom7 {
+    font-size: 1rem !important; /* Adjust button font size */
+    padding: 10px 20px !important; /* Adjust button padding */
+  }
+
+  .section-height-3 h3, 
+    .section-height-3 p {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .section-height-3 {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}
 
 
 		</style>
@@ -528,7 +580,7 @@ background: rgba(250, 213, 27, 1);
 				<section class="section position-relative border-0 m-0" style="background-position: center; background-size: cover;">
 					<div class="container position-relative pb-5 mb-5">
 			
-						<img height="800" width="850" src="img\WebImages\dd.png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: -16px; margin-right: -90px;" />
+						<img height="800" width="850" src="img\WebImages\latest pictures\file (2) (1).png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: -16px; margin-right: -90px;" />
 						<div class="row align-items-center pb-5 mb-4">
 							<div class="col-lg-5">
 								<h2 class="font-weight-bold text-color-light custom-big-text-1 ws-nowrap pt-5 pb-5-5 mb-1 my-md-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
@@ -590,13 +642,13 @@ background: rgba(250, 213, 27, 1);
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">GEAT A QUOTE</a> -->
 							</div>
 							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5" style="margin-left: 50px !important;">
-								<img src="img\WebImages\inventory.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database" />
+								<img src="img\WebImages\latest pictures\Real Time Direct Inventory (2).png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database" />
 							</div>
 						</div>
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
 							
 							<div class="col-lg-5 text-center text-lg-start appear-animation mr-5" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 20px !important;">
-								<img src="img\WebImages\personalisedtrips.png" class="img-fluid mb-4 mb-lg-0" alt="Itinerary" />
+								<img src="img\WebImages\latest pictures\Personalized Itinerary (1).png" class="img-fluid mb-4 mb-lg-0" alt="Itinerary" />
 							</div>
 							<div class="col-lg-6 text-center text-lg-start appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 50px !important;">								
 								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Generate Personalised Trips</br>
@@ -614,7 +666,7 @@ background: rgba(250, 213, 27, 1);
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">GEAT A QUOTE</a> -->
 							</div>
 							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5"style="margin-left: 50px !important;">
-								<img src="img\WebImages\Timeschedule2.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Time Scheduling" />
+								<img src="img\WebImages\latest pictures\Time Scheduling (2).png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Time Scheduling" />
 							</div>
 						</div>
 						<!-- <div class="row align-items-center pt-1 my-5">
@@ -632,7 +684,7 @@ background: rgba(250, 213, 27, 1);
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
 							
 							<div class="col-lg-5 text-center text-lg-start appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 20px !important;">
-								<img src="img\WebImages\Payment Collection Route Maestro.png" class="img-fluid mb-4 mb-lg-0" alt="Payment Options" />
+								<img src="img\WebImages\latest pictures\Payment Options (1).png" class="img-fluid mb-4 mb-lg-0" alt="Payment Options" />
 							</div>
 							<div class="col-lg-6 text-center text-lg-start appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 50px !important;">								
 								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Secure & Easy Payment Options</strong></h2>
@@ -779,8 +831,9 @@ background: rgba(250, 213, 27, 1);
 				  </section>
 
 			</div>
+			
 			<section class="section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
-				<div class="container" style="height: 300px;">
+				<div class="container unique-container" style="height: 300px;">
 				  <div class="row align-items-center" style="height: 100px;">
 					<div class="col-xl-6 text-center" style="margin-top: -31px !important;">
 					  <img height="40px" width="300px" src="img\WebImages\CTA Image (3).png" alt="Mobile Phone" class="img-fluid">
@@ -796,7 +849,7 @@ background: rgba(250, 213, 27, 1);
 			  </section>
 			  
 			  <!-- <div style="background: #07072C;"> -->
-				<div style="background: #07072C; height: 450px;">
+		<div style="background: #07072C; height: 450px;">
 
 			<footer id="footer" class="position-relative bg-transparent border-top-0">
 			
