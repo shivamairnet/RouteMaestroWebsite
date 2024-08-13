@@ -190,8 +190,6 @@
     background-size: cover;          /* Ensures the image covers the entire section */
     background-position: center;      /* Centers the image within the section */
     background-repeat: no-repeat;     /* Prevents repeating the image */
-    /* background-attachment: fixed; 
-	     */
     margin-left: 30px !important;
     margin-right: 30px !important;
     border-radius: 10px;
@@ -308,6 +306,7 @@ background: rgba(250, 213, 27, 1);
 .image-container {
     position: relative;
     display: inline-block;
+	
 }
 
 .main-image {
@@ -355,7 +354,7 @@ background: rgba(250, 213, 27, 1);
     display: block; /* Ensure image is block-level */
     margin-left: auto;
     margin-right: auto; /* Center-align images */
-	margin-top: -100px !important;
+	margin-top: -50px !important;
   }
 
   /* Remove side margins in columns for mobile view */
@@ -372,6 +371,11 @@ background: rgba(250, 213, 27, 1);
 	margin-top:10px !important;
 	/* margin-bottom: 10px !important; */
   }
+
+  .image-container {
+    margin-top: 70px !important;
+	
+}
 }
 
 /* media query for the footer section */
@@ -386,7 +390,7 @@ background: rgba(250, 213, 27, 1);
   #footer .container {
     padding-right: 15px;
     padding-left: 15px;
-	height: 450px !important;
+	height: 550px !important;
 	background-color: #07072C !important;
   }
 
@@ -448,14 +452,7 @@ background: rgba(250, 213, 27, 1);
     padding: 20px !important; /* Add padding or adjust as needed */
   }
 
-  .unique-container {
-    height: auto !important; /* Allow container to adjust height automatically */
-  }
-
-  .unique-container .row {
-    flex-direction: column !important; /* Stack columns vertically on small screens */
-    align-items: center !important; /* Center align items */
-  }
+  
 
   
 
@@ -504,7 +501,7 @@ background: rgba(250, 213, 27, 1);
 
 	.ctasection{
 		margin-top: 580px !important;
-		height: 500px !important;
+		height: 600px !important;
 	}
 
 	.ctah2{
@@ -513,25 +510,28 @@ background: rgba(250, 213, 27, 1);
 	}
 	 
 	.overlay-image {
+		margin-top:20px !important;
     position: absolute;
-    width: 85px; /* Adjust the size as needed */
+    width: 75px; /* Adjust the size as needed */
     height: 60px; /* Adjust the size as needed */
 }
 
 .top-left {
     top: -60px;
-    left: -27px;
-    margin: 10px; /* Adjust the margin as needed */
+    left: 35px;
+    margin: 10px;
+	margin-top:20px !important; /* Adjust the margin as needed */
 }
 
 .bottom-right {
-    bottom: -69px;
-    right: -40px;
+    bottom: -77px;
+    right: 34px;
     margin: 10px; /* Adjust the margin as needed */
 }
 
 .btn-custom7{
-	margin-top: 50px !important;
+	margin-top: 75px !important;
+	margin-left: 60px !important;
 	justify-content: center !important;
 	
 }
@@ -546,7 +546,7 @@ background: rgba(250, 213, 27, 1);
     }
     
 	.sectionmobile{
-		height:660px !important;
+		height:720px !important;
 	}
     
 	.sectionmobile img{
@@ -575,6 +575,13 @@ background: rgba(250, 213, 27, 1);
 
  .mainsectionheight{
 	height: 650px !important;
+ }
+
+ .secondhead{
+	height: 300px !important;
+	color: #07072C !important;
+	margin-top: 200px !important;
+	margin-bottom: 50px !important;
  }
 
 }
@@ -709,7 +716,7 @@ background: rgba(250, 213, 27, 1);
 						</div>
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0 space" style="margin-top:75px !important ; margin-bottom: 75px !important;">
 							<div class="row">
-								<div class="col text-center">
+								<div class="secondhead col text-center">
 									<h2 class="text-color-dark font-weight-medium text-8 mb-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"><strong>Digitize Your Travel Infrastructure</strong></h2>
                                     <p class="text-color-dark mb-2 text-5-6 text-center line-height-3">
 										RouteMaestro is Equipped With Global Dynamic Destination Data With AI-Powered </br>Personalised Itinerary Generation & Booking Engines, That Minimize The Cost Of Travel & Generates Personalized End-To-End Trips.
