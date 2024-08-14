@@ -6209,7 +6209,7 @@ h6 .inverted {
 }
 
 .text-3 {
-	font-size: 1.03em !important;
+	font-size: 1.2em !important;
 }
 
 .text-3-4,
@@ -8290,7 +8290,7 @@ a.text-light:focus, a.text-light:hover {
 /* Container */
 @media (min-width: 1200px) {
 	.container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
-		max-width: 1140px;
+		max-width: 1166px;
 	}
 }
 
