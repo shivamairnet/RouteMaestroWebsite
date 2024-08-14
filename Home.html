@@ -51,9 +51,6 @@
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
-		<!-- fonts -->
-
-
 		<style>
 
 .gradient-bg-new2{
@@ -86,7 +83,7 @@
 }
 
 .btn-custom{
-  background: #FE6652; 
+  background: #FE6652 ; 
   color: white; 
   border: none; 
   padding: 0.25rem 0.25rem; 
@@ -102,7 +99,7 @@
 }
 
 .btn-custom4{
-  background: #FE6652; 
+  background:#FE6652 ; 
   color: white; 
   border: none; 
   padding: 0.25rem 0.25rem; 
@@ -111,8 +108,8 @@
   font-size: 1.2rem !important; 
   align-items: center;
   width: 160px !important;
-  margin-top: 50px;
-  margin-left: 50px !important;
+  margin-top: 40px;
+  margin-left: 137px !important;
   margin-right: -22px !important;
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
@@ -120,7 +117,7 @@
 }
 
 .btn-custom7{
-  background: #FE6652; 
+  background: #FE6652 ; 
   color: white; 
   border: none; 
   /* padding: 0.5rem 1rem;  */
@@ -139,8 +136,8 @@
   
 }
 .btn-custom3{
-  background: #FE6652; 
-  color: white; 
+  background: rgba(250, 213, 27, 1); 
+  color: #000; 
   border: none; 
   padding: 0.25rem 0.25rem; 
   border-radius: 0.5rem; 
@@ -194,8 +191,6 @@
     background-size: cover;          /* Ensures the image covers the entire section */
     background-position: center;      /* Centers the image within the section */
     background-repeat: no-repeat;     /* Prevents repeating the image */
-    /* background-attachment: fixed; 
-	     */
     margin-left: 30px !important;
     margin-right: 30px !important;
     border-radius: 10px;
@@ -218,8 +213,8 @@
 }
 
 .btn-custom2{
-background: #FE6652; 
-  color: white; 
+background: rgba(250, 213, 27, 1); 
+  color: #000; 
   border: none; 
   /* padding: 0.25rem 0.25rem;  */
   border-radius: 0.5rem; 
@@ -312,6 +307,7 @@ background: #FE6652;
 .image-container {
     position: relative;
     display: inline-block;
+	
 }
 
 .main-image {
@@ -339,7 +335,7 @@ background: #FE6652;
 
 
 
-/* media query for header */
+
 @media (max-width: 767px) {
   .btn-custom1 {
     display: none;
@@ -359,23 +355,31 @@ background: #FE6652;
     display: block; /* Ensure image is block-level */
     margin-left: auto;
     margin-right: auto; /* Center-align images */
+	margin-top: -50px !important;
   }
 
   /* Remove side margins in columns for mobile view */
   .col-lg-5, .col-lg-6 {
     margin-left: 0 !important;
     margin-right: 0 !important;
+	
   }
 
   /* Ensure headings and paragraphs are centered */
   .col-lg-5 h2, .col-lg-6 h2,
   .col-lg-5 p, .col-lg-6 p {
     text-align: center;
+	margin-top:10px !important;
+	/* margin-bottom: 10px !important; */
   }
+
+  .image-container {
+    margin-top: 70px !important;
+	
+}
 }
 
-/* media query for the footer section */
-/* Media query for mobile devices */
+
 @media (max-width: 767px) {
   #footer {
     padding-top: 1rem;
@@ -386,7 +390,7 @@ background: #FE6652;
   #footer .container {
     padding-right: 15px;
     padding-left: 15px;
-	height: 450px !important;
+	height: 550px !important;
 	background-color: #07072C !important;
   }
 
@@ -442,40 +446,15 @@ background: #FE6652;
   }
 }
 
-/* Mobile styles */
+
 @media (max-width: 767px) {
   .section {
     padding: 20px !important; /* Add padding or adjust as needed */
   }
 
-  .unique-container {
-    height: auto !important; /* Allow container to adjust height automatically */
-  }
+  
 
-  .unique-container .row {
-    flex-direction: column !important; /* Stack columns vertically on small screens */
-    align-items: center !important; /* Center align items */
-  }
-
-  .unique-container .col-xl-6,
-  .unique-container .col-xl-5 {
-    width: 100% !important; /* Make columns full-width */
-    margin-top: 0 !important; /* Remove top margin for better spacing */
-  }
-
-  .unique-container .col-xl-6 img {
-    height: 30px !important; /* Adjust image height for smaller screens */
-    width: auto !important; /* Maintain aspect ratio */
-  }
-
-  .unique-container .text-color-light {
-    font-size: 1.2rem !important; /* Adjust font size for better readability */
-  }
-
-  .unique-container .btn-custom7 {
-    font-size: 1rem !important; /* Adjust button font size */
-    padding: 10px 20px !important; /* Adjust button padding */
-  }
+  
 
   .section-height-3 h3, 
     .section-height-3 p {
@@ -493,7 +472,7 @@ background: #FE6652;
 @media (max-width: 767px) {
 	/* ignit section */
     .text-ignite {
-        margin-top: 10px !important; /* Adjust this value as needed */
+        margin-top: -15px !important; /* Adjust this value as needed */
     }
 
 	.buttons{
@@ -514,11 +493,98 @@ background: #FE6652;
 		margin-bottom: 10px !important;
 	}
 
+	.spacereducesky{
+		margin-top:-25px !important;
+		padding-top: 0px !important;
 	
+	}
 
+	.ctasection{
+		margin-top: 580px !important;
+		height: 600px !important;
+	}
 
+	.ctah2{
+	 margin-left: 25px !important;
+
+	}
+	 
+	.overlay-image {
+		margin-top:20px !important;
+    position: absolute;
+    width: 75px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
 }
 
+.top-left {
+    top: -60px;
+    left: 35px;
+    margin: 10px;
+	margin-top:20px !important; /* Adjust the margin as needed */
+}
+
+.bottom-right {
+    bottom: -77px;
+    right: 34px;
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+.btn-custom7{
+	margin-top: 75px !important;
+	margin-left: 60px !important;
+	justify-content: center !important;
+	
+}
+
+
+    .section1 {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        
+        border-radius: 5px;  
+		background-color: #07072C;        /* Smaller border-radius for mobile */
+    }
+    
+	.sectionmobile{
+		height:720px !important;
+	}
+    
+	.sectionmobile img{
+		margin-top: -80px !important;
+	}
+
+	.sectionmobiletext{
+		margin-top:95px !important;
+	}
+
+	.sectionmobilebtn{
+		margin-top: 20px !important;
+		margin-left:0px !important
+	}
+
+	/* .footermobile{
+		height: 700px;
+	} */
+ .mainsection{
+	margin-top:20px !important;
+ }
+
+ .main{
+	margin-top: 10px !important;
+ }
+
+ .mainsectionheight{
+	height: 650px !important;
+ }
+
+ .secondhead{
+	height: 300px !important;
+	color: #07072C !important;
+	margin-top: 200px !important;
+	margin-bottom: 50px !important;
+ }
+
+}
 
 		</style>
 	</head>
@@ -610,21 +676,21 @@ background: #FE6652;
 			</header>
 
 			<div role="main" class="main">
-                <div class="gradient-bg-new" style="height: 550px;">
-				<section class="section position-relative border-0 m-0" style="background-position: center; background-size: cover;">
-					<div class="container position-relative pb-5 mb-5">
+                <div class="mainsectionheight gradient-bg-new" style="height: 550px;">
+				<section class=" section position-relative border-0 m-0" style="background-position: center; background-size: cover;">
+					<div class="mainsection container position-relative pb-5 mb-5">
 			
-						<img height="800" width="850" src="img\WebImages\Route Maestro Website Updated Images\Devices Image (2).png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: -16px; margin-right: -90px;" />
+						<img height="800" width="800" src="img\WebImages\Route Maestro Website Updated Images\Devices Image (2).png" class="img-fluid position-absolute top-10 right-0 z-index-1 d-none d-lg-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" alt="Devices Images" style="margin-top: -16px; margin-right: -90px;" />
 						<div class="row align-items-center pb-5 mb-4">
-							<div class="col-lg-5">
+							<div class="col-lg-5" style="margin-right:40px;padding-right: 15px;">
 								<h2 class="font-weight-bold text-color-light custom-big-text-1 ws-nowrap pt-5 pb-5-5 mb-1 my-md-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">
 									<!-- <span class="d-none d-lg-block">ROUTE MAESTRO</span> -->
 								</h2>
-								<div class="text-white font-weight-bold text-12 line-height-2 appear-animation text-center text-ignite" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="margin-top: -100px;">Ignite Your Tourism</br> Business Success</div>
-								<h1 class="text-white font-weight-normal mb-4-5 appear-animation mt-3 text-center" style="font-size: 24px;letter-spacing: 0.02px;line-height: normal;" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">With our AI Powered Holiday Planning Engine </br>Designed For Instant Client Conversions</h1>
+								<div class="text-white font-weight-bold text-12 line-height-2 appear-animation text-center text-ignite mb-3" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="margin-top: -100px;">Digitize Your Travel Infrastructure</div>
+								<h1 class="text-white font-weight-normal mb-4-5 appear-animation mt-5-5 text-center" style="font-size: 18px;letter-spacing: 0.02px;line-height: 1.8rem;" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">RouteMaestro is Equipped With Global Dynamic</br> Destination Data With AI-Powered Personalised</br> Itinerary Generation & Booking Engines, That </br>Minimize The Cost Of Travel & Generates</br> Personalized End-To-End Trips.</h1>
 								<!-- <a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" id="openModalBtn">Request A Demo</a> -->
 								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" >Request A Demo</a>
-								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Get In Touch</a>
+								<!-- <a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Get In Touch</a> -->
 
 							</div>
 							<!-- <div class="col-lg-3 ms-lg-auto mb-lg-5 d-none d-lg-block">
@@ -644,16 +710,16 @@ background: #FE6652;
 					<div class="container custom-container-background z-index-1 py-2">
 						
 						<div class="row py-5">
-							<div class="col">
+							<!-- <div class="col"> -->
 								<!-- <hr> -->
-							</div>
+							<!-- </div> -->
 						</div>
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0 space" style="margin-top:75px !important ; margin-bottom: 75px !important;">
 							<div class="row">
-								<div class="col text-center">
-									<h2 class="text-color-dark font-weight-medium text-8 mb-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"><strong>Digitize Your Travel Infrastructure</strong></h2>
+								<div class="secondhead col text-center">
+									<h2 class="text-color-dark font-weight-medium text-8 mb-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"><strong>Next Gen Travel Technology Solution For Travel Business</strong></h2>
                                     <p class="text-color-dark mb-2 text-5-6 text-center line-height-3">
-										RouteMaestro is Equipped With Global Dynamic Destination Data With AI-Powered </br>Personalised Itinerary Generation & Booking Engines, That Minimize The Cost Of Travel & Generates Personalized End-To-End Trips.
+										<!-- RouteMaestro is Equipped With Global Dynamic Destination Data With AI-Powered </br>Personalised Itinerary Generation & Booking Engines, That Minimize The Cost Of Travel & Generates Personalized End-To-End Trips. -->
 									</p>
 									<!-- <h2 class="text-color-dark font-weight-medium text-8 mb-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"><strong>The Only Travel Solution You Require For Your Travel Business</strong></h2> -->
 								</div>
@@ -769,7 +835,7 @@ background: #FE6652;
 						<div class="row gy-5 mb-0">
 							<div class="col-lg-6">
 								<div class="custom-accordion-style-1 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" id="accordion1">
-									<ul style="list-style-type: none; padding-left: 30px;padding-top: 12px; display: inline-block; text-align: left;font-size:19px;">
+									<ul class="spacereducesky" style="list-style-type: none; padding-left: 30px;padding-top: 10px; display: inline-block; text-align: left;font-size:19px;">
 										<li class="mb-3 mt-5-5" style="color: #07072C;">
 											1. Door To Door Travel Route Planning
 										</li>
@@ -842,9 +908,9 @@ background: #FE6652;
 
 				</section>
 
-				<section class="section1 section-height-3 position-relative z-index-1 border-0 m-0 mt-5-5 px-4 py-4 mb-5 mt-5" style="margin-left: 30px !important;margin-right: 30px !important;border-radius:10px;">
+				<section class="ctasection section1 section-height-3 position-relative z-index-1 border-0 m-0 mt-5-5 px-4 py-4 mb-5 mt-5" style="margin-left: 30px !important;margin-right: 30px !important;border-radius:10px;">
 				
-					<div class="container" style="height: 400px;">
+					<div class="container" style="height: 345px;">
 					  <div class="row align-items-center" style="height: 250px;">
 						
 						<div class="col-xl-7 text-center text-xl-start">
@@ -853,8 +919,8 @@ background: #FE6652;
 						</div>
 						<div class="col-xl-5">
 						  <div class="d-flex flex-column align-items-center justify-content-center h-90 mt-4 px-4 py-4">
-							<h2 class="text-left text-color-light mb-5-5 mt-2" style="line-height: 1; font-size: 48px; margin-left: -115px;"><strong> Travel as-a-</strong></br><strong>Service Platform</strong></h2>
-							<p class="text-left text-color-light mb-4 text-4 line-height-3">Unlock the travel world with our cutting-edge technology solution, which revolutionizes the travel industry by delivering an unparalleled travel experience, simplifying travel arrangements, and fostering innovation for future business growth.  </p>
+							<h2 class="ctah2 text-left text-color-light mb-5-5 mt-2" style="line-height: 1; font-size: 48px; margin-left: -115px;"><strong> Travel-as-a-Service Platform</strong></h2>
+							<p class="ctap text-left text-color-light mb-4 text-4 line-height-3" style="margin-right: 20px;margin-left: -75px;">Unlock the travel world with our cutting-edge technology solution, which revolutionizes the travel industry by delivering an unparalleled travel experience, simplifying travel arrangements, and fostering innovation for future business growth.  </p>
 							<!-- <a href="#" class="btn btn-custom3 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 30px;">Get In Touch To Know More!</a> -->
 						  </div>
 						</div>
@@ -864,16 +930,16 @@ background: #FE6652;
 
 			</div>
 			
-			<section class="section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
-				<div class="container unique-container" style="height: 300px;">
+			<section class="sectionmobile section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
+				<div class="container" style="height: 300px;">
 				  <div class="row align-items-center" style="height: 100px;">
 					<div class="col-xl-6 text-center" style="margin-top: -31px !important;">
 					  <img height="40px" width="300px" src="img\WebImages\CTA Image (3).png" alt="Mobile Phone" class="img-fluid">
 					</div>
 					<div class="col-xl-5">
 					  <div class="d-flex flex-column align-items-center justify-content-center h-90" style="margin-top: -70px;">
-						<div class="text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
-						<a href="Contact.html" class="btn btn-custom7 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 25px;">Get In Touch</a>
+						<div class="sectionmobiletext text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
+						<a href="Contact.html" class="sectionmobilebtn btn btn-custom7 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 25px;">Get In Touch</a>
 					  </div>
 					</div>
 				  </div>
@@ -881,7 +947,7 @@ background: #FE6652;
 			  </section>
 			  
 			  <!-- <div style="background: #07072C;"> -->
-		<div style="background: #07072C; height: 450px;">
+		<div class="footermobile" style="background: #07072C; height: 450px;">
 
 			<footer id="footer" class="position-relative bg-transparent border-top-0">
 			
