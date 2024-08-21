@@ -205,6 +205,224 @@
         width: 100% !important; /* Force the plugin's container to be 100% */
     }
 
+
+
+/* Mobile specific styling */
+@media (max-width: 767px) {
+	/* ignit section */
+    .text-ignite {
+        margin-top: -15px !important; /* Adjust this value as needed */
+    }
+
+	.buttons{
+		margin-left: 15px !important;
+		margin-right: 15px !important;
+		margin-top: 20px;
+	}
+
+	/* next gen section */
+	.nextgentext{
+        margin-left: 5px !important;
+		margin-right: 5px !important;
+
+	}
+
+	.space{
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.spacereducesky{
+		margin-top:-25px !important;
+		padding-top: 0px !important;
+	
+	}
+
+	.ctasection{
+		margin-top: 580px !important;
+		height: 600px !important;
+	}
+
+	.ctah2{
+	 margin-left: 25px !important;
+
+	}
+	 
+	.overlay-image {
+		margin-top:20px !important;
+    position: absolute;
+    width: 75px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+}
+
+.top-left {
+    top: -60px;
+    left: 35px;
+    margin: 10px;
+	margin-top:20px !important; /* Adjust the margin as needed */
+}
+
+.bottom-right {
+    bottom: -77px;
+    right: 34px;
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+.btn-custom7{
+	margin-top: 75px !important;
+	margin-left: 60px !important;
+	justify-content: center !important;
+	
+}
+
+
+    .section1 {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        
+        border-radius: 5px;  
+		background-color: #07072C;        /* Smaller border-radius for mobile */
+    }
+    
+	.sectionmobile{
+		height:720px !important;
+	}
+    
+	.sectionmobile img{
+		margin-top: -80px !important;
+	}
+
+	.sectionmobiletext{
+		margin-top:95px !important;
+	}
+
+	.sectionmobilebtn{
+		margin-top: 20px !important;
+		margin-left:0px !important
+	}
+
+	/* .footermobile{
+		height: 700px;
+	} */
+ .mainsection{
+	margin-top:20px !important;
+ }
+
+ .main{
+	margin-top: 10px !important;
+ }
+
+ .mainsectionheight{
+	height: 650px !important;
+ }
+
+ .secondhead{
+	height: 300px !important;
+	color: #07072C !important;
+	margin-top: 290px !important;
+	margin-bottom: 50px !important;
+ }
+
+ .first{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+ }
+
+ @media (max-width: 767px) {
+  #footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+	
+  }
+
+  #footer .container {
+    padding-right: 15px;
+    padding-left: 15px;
+	height: 550px !important;
+	background-color: #07072C !important;
+  }
+
+  #footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .col-lg-4 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #footer .font-weight-bold {
+    font-size: 1.25rem;
+  }
+
+  #footer .text-3 {
+    font-size: 1rem;
+  }
+
+  /* Adjust logo size and text */
+  #footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #footer p {
+    font-size: large !important;
+  }
+
+  #footer .footer-copyright hr {
+    /* border: 1px solid #ffffff !important; */
+    width: 100% !important; /* Ensure it spans full width */
+    margin: 1rem 0 !important; /* Adjust margin for spacing */
+  }
+
+  #footer .footer-copyright .text-3 {
+    font-size: 1rem !important;
+  }
+
+  #footer .social-icons {
+    text-align: center; /* Center-align social icons */
+  }
+
+  #footer .social-icons li {
+    display: none;
+  }
+
+  #footer .social-icons i {
+	display: none;
+    /* font-size: 24px;  */
+  }
+}
+
+
+@media (max-width: 767px) {
+	.Ascentia{
+	width: 130px !important;
+	margin-left: -75px !important;
+}
+  .section {
+    padding: 20px !important; /* Add padding or adjust as needed */
+  }
+
+  .section-height-3 h3, 
+    .section-height-3 p {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .section-height-3 {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+	.requestbtn{
+		display: none !important;
+	}
+
+}
+
+
+}
 </style>
 
 
@@ -280,7 +498,7 @@
 														</nav>
 													</div>
 												</div>
-												<a href="#" class="position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold text-uppercase px-2 mb-3">Request A Demo</a>
+												<a href="#" class="requestbtn position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold text-uppercase px-2 mb-3" id="openModalBtn">Request A Demo</a>
 												<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 													<i class="fas fa-bars"></i>
 												</button>
@@ -381,7 +599,7 @@
 			</div>
 
 
-			<section class="section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
+			<section class="sectionmobile section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
 				<div class="container" style="height: 300px;">
 				  <div class="row align-items-center" style="height: 100px;">
 					<div class="col-xl-6 text-center" style="margin-top: -31px !important;">
@@ -389,15 +607,15 @@
 					</div>
 					<div class="col-xl-5">
 					  <div class="d-flex flex-column align-items-center justify-content-center h-90" style="margin-top: -70px;">
-						<div class="text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
-						<a href="Contact.html" class="btn btn-custom7 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 25px;">Get In Touch</a>
+						<div class="sectionmobiletext text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
+						<a href="#" class="sectionmobilebtn btn btn-custom7 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 25px;">Get In Touch</a>
 					  </div>
 					</div>
 				  </div>
 				</div>
 			  </section>
 
-			  <div style="background: #07072C; height: 450px;">
+			  <div class="footermobile" style="background: #07072C; height: 450px;">
 
 				<footer id="footer" class="position-relative bg-transparent border-top-0">
 					<!-- <div style="background: #07072C;"> -->
@@ -443,7 +661,7 @@
 									<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
 								</div>
 								<div style="align-items: center; justify-content: center;margin-top: 20px;margin-left: 75px;">
-									<img alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
+									<img class="Ascentia" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
 									
 								</div>
 							</div>
@@ -502,6 +720,29 @@
 				</footer>
 			</div>
 		</div>
+
+				<!-- Modal HTML -->
+<div id="demoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div>
+            <h2 class="modal-title">Request A Demo</h2>
+            <p class="text-center" style="margin: 1px;">Transform your travel business with RouteMaestro.</p>
+            <p class="text-center" style="margin: 1px;">The ultimate and only holiday platform you require for 
+                your travel business.</p>
+            <hr style="margin-top: 2px; margin-bottom: 2px;">
+            <p class="modal-title" style="margin: 4px; font-size: large; color: #07072C;">Select A Day</p>
+            
+            <!-- Calendly Embed -->
+            <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                <iframe src="https://calendly.com/arham-airnet-tech/travel-crm-demo" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 		<!-- Vendor -->
 		<script src="vendor/plugins/js/plugins.min.js"></script>

@@ -1207,7 +1207,7 @@ pre {
 	display: none;
 	float: right;
 	margin: 0 0 0 16px;
-	margin: 0 0 0 1rem;
+	margin: -17px 3px 8px 1rem;
 }
 
 #header.header-narrow .header-body {
@@ -3462,7 +3462,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		position: absolute;
 		background: transparent;
 		width: 100%;
-		top: 100%;
+		top: 90%;
 		left: 50%;
 		transform: translate3d(-50%, 0, 0);
 	}
