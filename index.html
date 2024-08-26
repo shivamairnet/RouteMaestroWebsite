@@ -346,43 +346,6 @@ background: rgba(250, 213, 27, 1);
 }
 
 
-/* Media Query for Mobile Devices for the zigzag section */
-@media (max-width: 767px) {
-  /* Center-align text and images in columns */
-  .col-lg-5, .col-lg-6 {
-    text-align: center; /* Center-align text and images */
-  }
-
-  /* Center-align images */
-  .col-lg-5 img, .col-lg-6 img {
-    display: block; /* Ensure image is block-level */
-    margin-left: auto;
-    margin-right: auto; /* Center-align images */
-	margin-top: -50px !important;
-  }
-
-  /* Remove side margins in columns for mobile view */
-  .col-lg-5, .col-lg-6 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-	
-  }
-
-  /* Ensure headings and paragraphs are centered */
-  .col-lg-5 h2, .col-lg-6 h2,
-  .col-lg-5 p, .col-lg-6 p {
-    text-align: center;
-	margin-top:10px !important;
-	/* margin-bottom: 10px !important; */
-  }
-
-  .image-container {
-    margin-top: 70px !important;
-	
-}
-}
-
-
 @media (max-width: 767px) {
   #footer {
     padding-top: 1rem;
@@ -589,7 +552,7 @@ background: rgba(250, 213, 27, 1);
 }
 
 .solution{
-	margin-top: -150px !important;
+	margin-top: -85px !important;
 }
 
 .Ascentia{
@@ -624,6 +587,72 @@ background: rgba(250, 213, 27, 1);
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem; /* Space between image and h3 */
+}
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .section .row {
+    flex-direction: column !important;
+    margin-top: 0 !important; /* Reset any margin-top */
+    margin-bottom: 0 !important; /* Reset any margin-bottom */
+  }
+  
+  .section .col-lg-5,
+  .section .col-lg-6 {
+    width: 100% !important; /* Make each column full width */
+    margin-left: 0 !important; /* Reset any left margin */
+    margin-right: 0 !important; /* Reset any right margin */
+    text-align: center !important; /* Center the text */
+    margin-bottom: 30px !important; /* Add consistent spacing between columns */
+  }
+
+  .section .col-lg-5 img,
+  .section .col-lg-6 img {
+    max-width: 100% !important; /* Make images responsive */
+    height: auto !important;
+    margin-bottom: 20px !important; /* Add some spacing below images */
+  }
+  
+  .section .text-right,
+  .section .text-left {
+    text-align: center !important; /* Center text in all sections */
+  }
+
+  .section .space {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Ensure no overlap between sections */
+  .section .secondhead,
+  .section .nextgentext {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Reset padding and margins */
+  .section .pb-5, 
+  .section .pt-1, 
+  .section .py-2 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .section .mr-5 {
+    margin-right: 0 !important;
+  }
+
+  .section .mb-5-5 {
+    margin-bottom: 0 !important;
+  }
+
+  /* Ensure the section height fits content */
+  .section {
+    height: auto !important;
+  }
 }
 
 
@@ -668,36 +697,7 @@ background: rgba(250, 213, 27, 1);
 																		Pricing
 																		<!-- about us in actual -->
 																	</a>
-																</li>
-																<!-- <li class="dropdown">
-																	<a class="nav-link dropdown-toggle" href="demo-insurance-insurances.html">
-																		Insurances
-																	</a>
-																	<ul class="dropdown-menu">
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Auto Insurance</a></li>
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Life Insurance</a></li>
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Business Insurance</a></li>
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Travel Insurance</a></li>
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Home Insurance</a></li>
-																		<li><a href="demo-insurance-insurances-detail.html" class="dropdown-item">Others</a></li>
-																	</ul>
-																</li> -->
-																<!-- <li>
-																	<a class="nav-link" href="demo-insurance-agents.html">
-																		Agents
-																	</a>
-																</li>
-																<li>
-																	<a class="nav-link" href="demo-insurance-blog.html">
-																		Blog
-																	</a>
-																</li> -->
-																<!-- <li>
-																	<a class="nav-link" href="Contact.html">
-																		Contact Us
-																	</a>
-																</li> -->
-																
+																</li>								
 															</ul>
 														</nav>
 													</div>
@@ -732,18 +732,7 @@ background: rgba(250, 213, 27, 1);
 								<div class="text-white font-weight-bold text-12 line-height-2 appear-animation text-left text-ignite mb-3" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="margin-top: -100px;">Digitize Your Travel Infrastructure</div>
 								<h1 class="text-white font-weight-normal mb-4-5 appear-animation mt-5-5 text-left" style="font-size: 18px;letter-spacing: 0.02px;line-height: 1.8rem;" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">RouteMaestro is Equipped With Global Dynamic </br>Destination Data With AI-Powered Personalised </br> Itinerary Generation & Booking Engines, That</br> Minimize The Cost Of Travel & Generates </br> Personalized End-To-End Trips.</h1>
 								<a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" id="openModalBtn">Request A Demo</a>
-								<!-- <a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mr-1 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" >Request A Demo</a> -->
-								<!-- <a href="#" class="btn btn-custom4 btn-rounded border-0 font-weight-bold text-3 px-3 btn-py-3 mb-7 appear-animation buttons" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100">Get In Touch</a> -->
-
-							</div>
-							<!-- <div class="col-lg-3 ms-lg-auto mb-lg-5 d-none d-lg-block">
-								<ul class="list list-unstyled">
-									<li class="font-weight-bold text-color-light line-height-1 text-20 ws-nowrap ps-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">HOME</li>
-									<li class="font-weight-bold text-color-light line-height-1 text-20 ws-nowrap ps-5 ms-5 position-relative left-8 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">TRAVEL</li>
-									<li class="font-weight-bold text-color-light line-height-1 text-20 ws-nowrap ps-5 ms-5 position-relative left-12 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1000">&nbsp;LIFE</li>
-									<li class="font-weight-bold text-color-light line-height-1 text-20 ws-nowrap ps-5 ms-5 position-relative left-15 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1200">CAR</li>
-								</ul>
-							</div> -->
+							</div>							
 						</div>
 					</div>
 				</section>
@@ -751,21 +740,10 @@ background: rgba(250, 213, 27, 1);
 
 				<section class="section bg-transparent position-relative border-0 m-0 p-0">
 					<div class="container custom-container-background z-index-1 py-2">
-						
-						<!-- <div class="row py-5"> -->
-							<!-- <div class="col"> -->
-								<!-- <hr> -->
-							<!-- </div> -->
-						<!-- </div> -->
-						
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0 space" style="margin-top:70px !important ; margin-bottom: 75px !important;">
 							<div class="row">
 								<div class="secondhead col text-center" style="margin-top: 50px;margin-bottom: 30px;">
 									<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="text-decoration: underline;"><strong>Next Gen Travel Technology Solution For Travel Business</strong></h2>
-                                    <!-- <p class="text-color-dark mb-2 text-5-6 text-center line-height-3"> -->
-										<!-- RouteMaestro is Equipped With Global Dynamic Destination Data With AI-Powered </br>Personalised Itinerary Generation & Booking Engines, That Minimize The Cost Of Travel & Generates Personalized End-To-End Trips. -->
-									<!-- </p> -->
-									<!-- <h2 class="text-color-dark font-weight-medium text-8 mb-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100"><strong>The Only Travel Solution You Require For Your Travel Business</strong></h2> -->
 								</div>
 							</div>
 							<div class="col-lg-5 text-center text-lg-start appear-animation mr-5 nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
@@ -777,16 +755,14 @@ background: rgba(250, 213, 27, 1);
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">VIEW INSURANCES</a> -->
 							</div>
 						</div>
-					
-
-						<div class="row align-items-center pt-1 my-5 space" style="margin-top:40px !important; margin-bottom: 40px !important; height: 700px;">
+						<div class="row align-items-center pt-1 my-5 space" style="margin-top:40px !important; margin-bottom: 40px !important;">
 						
 							<div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" style="padding-right: 20px;width: 39%;">
 								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right"><strong>Real-Time Direct Inventory</strong></h2>
 								<p class="text-3-5 line-height-8 mb-4 text-right">RouteMaestro’s AI Engine intelligently curates and integrates diverse booking inventories into seamless travel itineraries. Drawing from a wide array of sources, it enhances the planning & booking process, generating end-to-end trips and improving service provider outcomes.</p>
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">G</a> -->
 							</div>
-							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext space" style="margin-left: 70px;width: 54%;height: 700px;display: flex;justify-content: center;align-items: center;">
+							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext space" style="margin-left: 70px;width: 54%;display: flex;justify-content: center;align-items: center;">
 								<img src="img\WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database"/>
 							</div>
 						</div>
@@ -813,18 +789,6 @@ background: rgba(250, 213, 27, 1);
 								<img src="img\WebImages\Route Maestro Website Updated Images\Time Scheduling tester.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Time Scheduling" />
 							</div>
 						</div>
-						<!-- <div class="row align-items-center pt-1 my-5">
-						
-							<div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100">
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-center"><strong>Seamless Travel Scheduling</strong></h2>
-								<p class="text-3-5 line-height-8 mb-4 text-center">Route Maestro generates 
-									Minute-by-Minute Travel Holidays relative to every service precisely scheduled down to the minute, to optimize the travel journey.</p>
-								
-							</div>
-							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2">
-								<img src="img/demos/insurance/generic/generic-2.jpg" class="img-fluid rounded-circle mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Route Maestro" />
-							</div>
-						</div> -->
 						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
 							
 							<div class="col-lg-5 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
@@ -837,10 +801,8 @@ background: rgba(250, 213, 27, 1);
 									payment gateways.</p>
 								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">VIEW INSURANCES</a> -->
 							</div>
-						</div>
-						
+						</div>					
 					</div>
-	
 				</section>
 			
 				<section class="solution section-height-3 position-relative z-index-1 border-0 m-0 px-4 py-4 mb-5 mt-5" style="height: 500px; background-image: url('img/WebImages/Route Maestro Website Updated Images/backgrddmcsection1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
