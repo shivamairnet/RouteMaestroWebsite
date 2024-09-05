@@ -701,6 +701,141 @@ background: rgba(250, 213, 27, 1);
   }
 }
 
+/* new section */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* .travel-business-profits-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .travel-business-profits-section h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .travel-business-profits-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        } */
+
+        .dashboard-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            /* background-color: white; */
+            border: 1px solid #07072C;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            text-align: left;
+            width: 260px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+			border: none;
+			background-color: white;
+        }
+
+        .card-icon {
+            background-color: #3b4e81;
+            border-radius: 50%;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .card-icon img {
+            /* width: 31px; */
+            /* height: 31px; */
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .card-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .metric-block {
+            text-align: center;
+        }
+
+        .metric-block .value {
+            font-size: 11px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .metric-block .description {
+            font-size: 11px;
+            /* color: #666; */
+            text-align: center;
+        }
+
+        .up {
+            color: #28a745;
+        }
+
+        .down {
+            color: #ff4949;
+        }
+
+        .arrow-icon {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dashboard-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
 
 
 
@@ -783,6 +918,136 @@ background: rgba(250, 213, 27, 1);
 					</div>
 				</section>
 			</div>	
+
+			<section class="section bg-transparent position-relative border-0 m-0 p-0">
+				
+					<div class="sectionimp pt-5 pb-5-5 mt-4">
+						<div class="row">
+							<div class="col text-center">
+								<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100"><strong>Maximize Your Travel Business Profits </strong></h2>
+								<p class=" text-color-dark text-5 mb-4 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help<br> you to boost your travel business game.</p>
+							</div>
+						</div>
+						<section class="travel-business-profits-section">
+							<!-- <h1>Maximize Your Travel Business Profits</h1> -->
+							<!-- <p>With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help you to boost your travel business game.</p> -->
+							
+							<div class="dashboard-wrapper">
+						
+								<!-- Card 1: Avg. Profitability -->
+								<div class="card">
+									<div class="card-header">
+										<div class="card-icon">
+											<img src="profitability-icon.png" height="8px" width="8px" alt="Profitability Icon">
+										</div>
+										<div class="card-title">Avg. Profitability</div>
+									</div>
+									<div class="card-content">
+										<div class="metric-block">
+											<span class="value down">5%</span>
+											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
+											<div class="description">Overall Total Profit (Without Automations)</div>
+										</div>
+										<div class="metric-block">
+											<!-- <span class="value down">5%</span> -->
+											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+											<!-- <div class="description">Overall Total Profit (Without Automations)</div> -->
+										</div>
+
+										<div class="metric-block">
+											<span class="value up">15%</span>
+											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
+											<div class="description">Overall Total Profit (With Automations)</div>
+										</div>
+									</div>
+								</div>
+						
+								<!-- Card 2: Avg. Expenses -->
+								<div class="card">
+									<div class="card-header">
+										<div class="card-icon">
+											<img src="expenses-icon.png" height="8px" width="8px" alt="Expenses Icon">
+										</div>
+										<div class="card-title">Avg. Expenses</div>
+									</div>
+									<div class="card-content">
+										<div class="metric-block">
+											<span class="value down">15%</span>
+											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
+											<div class="description">Overall Total Expense (Without Automations)</div>
+										</div>
+										<div class="metric-block">
+											<!-- <span class="value down">15%</span> -->
+											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+											<!-- <div class="description">Overall Total Expense (Without Automations)</div> -->
+										</div>
+										<div class="metric-block">
+											<span class="value down">10%</span>
+											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
+											<div class="description">Overall Total Expense (With Automations)</div>
+										</div>
+									</div>
+								</div>
+						
+								<!-- Card 3: Avg. Time Taken -->
+								<div class="card">
+									<div class="card-header">
+										<div class="card-icon">
+											<img src="itinerary-icon.png" height="8px" width="8px" alt="Itinerary Icon">
+										</div>
+										<div class="card-title">Avg. Time Taken To Generate An Itinerary</div>
+									</div>
+									<div class="card-content">
+										<div class="metric-block">
+											<span class="value">0-3 Days</span>
+											<div class="description">Without Automations</div>
+										</div>
+										<div class="metric-block">
+											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+
+										</div>
+										
+										<div class="metric-block">
+											<span class="value">60 Sec</span>
+											<div class="description">With Automations</div>
+										</div>
+									</div>
+								</div>
+						
+								<!-- Card 4: Client Retention & Conversion -->
+								<div class="card">
+									<div class="card-header">
+										<div class="card-icon">
+											<img src="retention-icon.png" height="8px" width="8px" alt="Retention Icon">
+										</div>
+										<div class="card-title">Client Retention & Conversion</div>
+									</div>
+									<div class="card-content">
+										<div class="metric-block">
+											<span class="value up">20%</span>
+											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
+											<div class="description">Retention (Without Automations)</div>
+										</div>
+										<div class="metric-block">
+											<!-- <span class="value up">20%</span> -->
+											<img src="arrow-up.png" height="8px" width="8px" alt="Up Arrow" class="arrow-icon">
+											<!-- <div class="description">Retention (Without Automations)</div> -->
+										</div>
+										<div class="metric-block">
+											<span class="value up">30%</span>
+											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
+											<div class="description">Retention (With Automations)</div>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						</section>
+				
+					</div>
+				</div>
+
+				</section>
 
 				<section class="section bg-transparent position-relative border-0 m-0 p-0">
 					<div class="container custom-container-background z-index-1 py-2">
