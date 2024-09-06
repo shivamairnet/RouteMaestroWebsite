@@ -423,11 +423,15 @@ background: rgba(250, 213, 27, 1);
     /* border: 1px solid #ffffff !important; */
     width: 100% !important; /* Ensure it spans full width */
     margin: 1rem 0 !important; /* Adjust margin for spacing */
+
   }
 
   #footer .footer-copyright .text-3 {
     font-size: 1rem !important;
   }
+   #footer .footer-copyright{
+	height: 20px !important;
+   }
 
   #footer .social-icons {
     text-align: center; /* Center-align social icons */
@@ -441,6 +445,8 @@ background: rgba(250, 213, 27, 1);
 	display: none;
     /* font-size: 24px;  */
   }
+
+  
 }
 
 
@@ -478,6 +484,8 @@ background: rgba(250, 213, 27, 1);
 	.nextgentext{
         margin-left: 5px !important;
 		margin-right: 5px !important;
+		font-display: swap !important;
+	
 
 	}
 
@@ -493,12 +501,12 @@ background: rgba(250, 213, 27, 1);
 	}
 
 	.ctasection{
-		margin-top: 600px !important;
+		margin-top: 620px !important;
 		height: 600px !important;
 	}
 
 	.ctah2{
-	 margin-left: 25px !important;
+	 margin-left: 20px !important;
 
 	}
 	 
@@ -552,12 +560,13 @@ background: rgba(250, 213, 27, 1);
 	}
 
 	.sectionmobiletext{
-		margin-top:95px !important;
+		margin-top:50px !important;
 	}
 
 	.sectionmobilebtn{
 		margin-top: 20px !important;
-		margin-left:0px !important
+		margin-left:0px !important;
+		margin-bottom: 35px !important;
 	}
 
 	.footer-copyright{
@@ -602,6 +611,7 @@ background: rgba(250, 213, 27, 1);
 
 .ctap{
 	margin-left: 10px !important;
+	text-align: left !important;
 }
 
 .col-lg-4 .p
@@ -643,7 +653,7 @@ background: rgba(250, 213, 27, 1);
 
 	.btn-custom7{
 		margin-top: 52px !important;
-		margin-left: 80px !important;
+		margin-left: 75px !important;
 		justify-content: center !important;
 		
 	}
@@ -744,7 +754,7 @@ background: rgba(250, 213, 27, 1);
 }
 
 .card {
-    border: 1px solid #07072C;
+    border: 2px solid #07072C;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -762,6 +772,7 @@ background: rgba(250, 213, 27, 1);
 /* Zoom effect on hover */
 .card:hover {
     transform: scale(1.05); /* Scale the card to 105% on hover */
+	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 .card-header {
@@ -851,6 +862,7 @@ background: rgba(250, 213, 27, 1);
         width: 100%;
         max-width: 300px;
     }
+
 }
 
 /* Mobile specific styling */
@@ -933,6 +945,9 @@ background: rgba(250, 213, 27, 1);
     .zigzag-section {
         display: flex;
         flex-direction: column;
+		width: 100%;
+		align-items: center;
+	
     }
 
     .zigzag-section .order-1 {
@@ -951,7 +966,31 @@ background: rgba(250, 213, 27, 1);
     .zigzag-section .col-lg-5 {
         width: 100%; /* Make them full width */
     }
+   
+	.solution{
+		margin-top: 20px !important;
+	}
+
+	
 }
+
+/* For larger screens */
+@media (min-width: 769px) {
+    .zigzag-section .order-1 {
+        order: 0 !important; /* Reset to original order */
+		margin-left: 20px;
+		margin-right: 20px;
+    }
+
+    .zigzag-section .order-2 {
+        order: 0 !important; /* Reset to original order */
+    }
+
+    .zigzag-section .order-3 {
+        order: 0; /* Reset to original order */
+    }
+}
+
 
 
 
@@ -1173,14 +1212,14 @@ background: rgba(250, 213, 27, 1);
 
 				</section>
 
-				<section class="next-gen-travel-technology section bg-transparent position-relative border-0 m-0 p-0">
+				<section class="zigzag-section section bg-transparent position-relative border-0 m-0 p-0">
 					<div class="container custom-container-background z-index-1 py-2">
 						<div class="row align-items-center pb-5 mb-5" style="margin-top: 70px; margin-bottom: 75px;">
 							<div class="col text-center" style="margin-top: 50px; margin-bottom: 30px;">
 								<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation" 
 									data-appear-animation="fadeInUpShorterPlus" 
 									data-appear-animation-delay="100" 
-									style="text-decoration: underline;">
+									style="text-decoration: underline;font-display: swap;" >
 									<strong>Next Gen Travel Technology Solution For Travel Business</strong>
 								</h2>
 							</div>
@@ -1190,7 +1229,7 @@ background: rgba(250, 213, 27, 1);
 							<div class="col-lg-5 order-2 text-center text-lg-start appear-animation mr-5 nextgentext" 
 								 data-appear-animation="fadeInRightShorterPlus" 
 								 data-appear-animation-delay="100">
-								<img src="img/WebImages/Travel Routes (1).png" loading="lazy" 
+								<img src="img/WebImages/Travel Routes (1).png" loading="eager" 
 									 class="img-fluid rounded-circle mb-4 mb-lg-0" 
 									 alt="World Travel Route Map" />
 							</div>
@@ -1204,7 +1243,7 @@ background: rgba(250, 213, 27, 1);
 							</div>
 						</div>
 				
-						<div class="row align-items-center mb-5">
+						<div class="row align-items-center mb-5" style="height: 440px;">
 							<div class="col-lg-6 order-1 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" 
 								 data-appear-animation="fadeInLeftShorterPlus" 
 								 data-appear-animation-delay="100">
@@ -1215,7 +1254,7 @@ background: rgba(250, 213, 27, 1);
 							</div>
 							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext" 
 								 style="display: flex; justify-content: center; align-items: center;">
-								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" 
+								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" height="440px"
 									 class="img-fluid mb-4 mb-lg-0 appear-animation" 
 									 data-appear-animation="fadeInLeftShorterPlus" 
 									 data-appear-animation-delay="100" alt="Inventory Database"/>
@@ -1267,7 +1306,7 @@ background: rgba(250, 213, 27, 1);
 							<div class="col-lg-6 order-1 text-center text-lg-start appear-animation nextgentext" 
 								 data-appear-animation="fadeInRightShorterPlus" 
 								 data-appear-animation-delay="100">
-								<h2 class="font-weight-medium text-8 mb-4-5 text-left line-height-1">
+								<h2 class=" text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1">
 									<strong>Secure & Easy Payment Options</strong>
 								</h2>
 								<p class="text-3-5 line-height-8 mb-4 text-left">Easily pay with cards (Credit & Debit), 
@@ -1459,7 +1498,7 @@ background: rgba(250, 213, 27, 1);
 								<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
 							</div>
 							<div style="align-items: center; justify-content: center;margin-top: 20px;margin-left: 75px;">
-								<img class="Ascentia" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
+								<img class="Ascentia" alt="Ascentia Labs" width="220" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
 								
 							</div>
 						</div>
@@ -1506,7 +1545,7 @@ background: rgba(250, 213, 27, 1);
 				
 				<div class="footer-copyright bg-transparent">
 					<hr style="border: 1px solid #ffffff;" />
-					<div class="container">
+					<div class="container" style="height: 40px !important;">
 						
 						<div class="row">
 							<div class="col mt-2 mb-2">

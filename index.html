@@ -423,11 +423,15 @@ background: rgba(250, 213, 27, 1);
     /* border: 1px solid #ffffff !important; */
     width: 100% !important; /* Ensure it spans full width */
     margin: 1rem 0 !important; /* Adjust margin for spacing */
+
   }
 
   #footer .footer-copyright .text-3 {
     font-size: 1rem !important;
   }
+   #footer .footer-copyright{
+	height: 20px !important;
+   }
 
   #footer .social-icons {
     text-align: center; /* Center-align social icons */
@@ -441,6 +445,8 @@ background: rgba(250, 213, 27, 1);
 	display: none;
     /* font-size: 24px;  */
   }
+
+  
 }
 
 
@@ -478,6 +484,8 @@ background: rgba(250, 213, 27, 1);
 	.nextgentext{
         margin-left: 5px !important;
 		margin-right: 5px !important;
+		font-display: swap !important;
+	
 
 	}
 
@@ -493,12 +501,12 @@ background: rgba(250, 213, 27, 1);
 	}
 
 	.ctasection{
-		margin-top: 600px !important;
+		margin-top: 620px !important;
 		height: 600px !important;
 	}
 
 	.ctah2{
-	 margin-left: 25px !important;
+	 margin-left: 20px !important;
 
 	}
 	 
@@ -552,12 +560,13 @@ background: rgba(250, 213, 27, 1);
 	}
 
 	.sectionmobiletext{
-		margin-top:95px !important;
+		margin-top:50px !important;
 	}
 
 	.sectionmobilebtn{
 		margin-top: 20px !important;
-		margin-left:0px !important
+		margin-left:0px !important;
+		margin-bottom: 35px !important;
 	}
 
 	.footer-copyright{
@@ -602,6 +611,7 @@ background: rgba(250, 213, 27, 1);
 
 .ctap{
 	margin-left: 10px !important;
+	text-align: left !important;
 }
 
 .col-lg-4 .p
@@ -643,7 +653,7 @@ background: rgba(250, 213, 27, 1);
 
 	.btn-custom7{
 		margin-top: 52px !important;
-		margin-left: 80px !important;
+		margin-left: 75px !important;
 		justify-content: center !important;
 		
 	}
@@ -744,7 +754,7 @@ background: rgba(250, 213, 27, 1);
 }
 
 .card {
-    border: 1px solid #07072C;
+    border: 2px solid #07072C;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -755,6 +765,14 @@ background: rgba(250, 213, 27, 1);
     flex-direction: column;
     justify-content: space-between;
     align-items: center; /* Center all content */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Zoom effect on hover */
+.card:hover {
+    transform: scale(1.05); /* Scale the card to 105% on hover */
+	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 .card-header {
@@ -776,6 +794,7 @@ background: rgba(250, 213, 27, 1);
     font-size: 18px;
     font-weight: bold;
     color: black;
+	height: 25px;
     /* text-align: center;  */
 }
 
@@ -790,7 +809,7 @@ background: rgba(250, 213, 27, 1);
 }
 
 .metric-block {
- margin-top: 10px !important;
+ margin-top: 1px !important;
     text-align: center;
 }
 
@@ -843,6 +862,7 @@ background: rgba(250, 213, 27, 1);
         width: 100%;
         max-width: 300px;
     }
+
 }
 
 /* Mobile specific styling */
@@ -899,6 +919,78 @@ background: rgba(250, 213, 27, 1);
   text-decoration: none;
   cursor: pointer;
 }
+
+.arrow {
+    width: 30px; /* Length of the arrow line */
+    height: 2px; /* Thickness of the arrow line */
+    background-color: black; /* Color of the arrow line */
+    position: relative;
+    margin: 7px; /* Margin around the arrow */
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: -4px; /* Center the arrowhead vertically */
+    right: -20px; /* Position the arrowhead to the right */
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; /* Height of the arrowhead */
+    border-bottom: 5px solid transparent; /* Height of the arrowhead */
+    border-left: 20px solid black; /* Color of the arrowhead */
+	margin-left: -1px;
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .zigzag-section {
+        display: flex;
+        flex-direction: column;
+		width: 100%;
+		align-items: center;
+	
+    }
+
+    .zigzag-section .order-1 {
+        order: 1; /* h2 first */
+    }
+
+    .zigzag-section .order-2 {
+        order: 2; /* img second */
+    }
+
+    .zigzag-section .order-3 {
+        order: 3; /* p last */
+    }
+
+    .zigzag-section .col-lg-6,
+    .zigzag-section .col-lg-5 {
+        width: 100%; /* Make them full width */
+    }
+   
+	.solution{
+		margin-top: 20px !important;
+	}
+
+	
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+    .zigzag-section .order-1 {
+        order: 0 !important; /* Reset to original order */
+		margin-left: 20px;
+		margin-right: 20px;
+    }
+
+    .zigzag-section .order-2 {
+        order: 0 !important; /* Reset to original order */
+    }
+
+    .zigzag-section .order-3 {
+        order: 0; /* Reset to original order */
+    }
+}
+
 
 
 
@@ -1005,22 +1097,22 @@ background: rgba(250, 213, 27, 1);
 										</div>
 										<div class="card-title">Average Profitability</div>
 									</div>
-									<div class="card-content">
+									<div class="card-content" style="height: 82px;">
 										<div class="metric-block">
-											<span class="value down" style="background-color: red;color: white; margin-left: 20px;margin-right: 15px;width: 70px; margin-top: -25px;">5%</span>
+											<span class="value down" style="background-color: red;color: white; margin-left: 20px;margin-right: 15px;width: 70px;">5%</span>
 											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
 											<div class="description">(Overall Total Profit)<br> (Without RouteMaestro)</div>
 										</div>
-										<div class="metric-block" style="margin-top: -40px;">
+										<div class="metric-block" >
 											<!-- <span class="value down">5%</span> -->
 											<img src="img\WebImages\Route Maestro Website Updated Images\Upward Arrow.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
-											<div class="arrow-up"></div>
+											<div class="arrow" style="margin-bottom: 0.5px;"></div>
 											<span class="growth">+200%</span>
 											<!-- <div class="description">Overall Total Profit (Without Automations)</div> -->
 										</div>
 
 										<div class="metric-block">
-											<span class="value up" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px; margin-top: -25px;">15%</span>
+											<span class="value up" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">15%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
 											<div class="description">(Overall Total Profit)<br> (With RouteMaestro)</div>
 										</div>
@@ -1035,16 +1127,16 @@ background: rgba(250, 213, 27, 1);
 										</div>
 										<div class="card-title">Averge Expenses</div>
 									</div>
-									<div class="card-content">
+									<div class="card-content" style="height: 82px;">
 										<div class="metric-block">
 											<span class="value down" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">15%</span>
 											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
 											<div class="description">(Overall Total Expenses)<br> (Without RouteMaestro)</div>
 										</div>
-										<div class="flex-column metric-block" style="margin-top: 0px;">
+										<div class="flex-column metric-block">
 											<!-- <span class="value down">15%</span> -->
-											<img src="img\WebImages\Route Maestro Website Updated Images\Downward Arrow.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon" style="margin-top: -25px;">
-											<div class="arrow-up"></div>
+											<img src="img\WebImages\Route Maestro Website Updated Images\Downward Arrow.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+											<div class="arrow" style="margin-bottom: 0.5px;"></div>
 											<span class="growth">-33.33%</span>
 											<!-- <div class="description">Overall Total Expense (Without Automations)</div> -->
 										</div>
@@ -1064,20 +1156,20 @@ background: rgba(250, 213, 27, 1);
 										</div>
 										<div class="card-title">Avg. Time Input/Trip</div>
 									</div>
-									<div class="card-content">
+									<div class="card-content" style="height: 82px;">
 										<div class="metric-block">
-											<span class="value" style="background-color: red;color: white; margin-top: -25px;margin-left: 20px;margin-right: 15px;width: 70px;">1-2 Days</span>
+											<span class="value" style="background-color: red;color: white; margin-left: 20px;margin-right: 15px;width: 70px;">1-2 Days</span>
 											<div class="description">(Without RouteMaestro)</div>
 										</div>
 										<div class="flex-column metric-block" style="margin-top: -40px;">
 											<img src="img\WebImages\Route Maestro Website Updated Images\Downward Arrow.png" alt="Down Arrow" class="arrow-icon" >
-											<div class="arrow-up"></div>
+											<div class="arrow" style="margin-bottom: 0.5px;"></div>
 											<!-- <span class="growth">+200%</span> -->
 
 										</div>
 										
 										<div class="metric-block">
-											<span class="value" style="background-color: red; color: white; margin-top: -25px;margin-left: 20px;margin-right: 15px;width: 70px;">60 Sec</span>
+											<span class="value" style="background-color: red; color: white;margin-left: 20px;margin-right: 15px;width: 70px;">60 Sec</span>
 											<div class="description">(With RouteMaestro)</div>
 										</div>
 									</div>
@@ -1091,9 +1183,9 @@ background: rgba(250, 213, 27, 1);
 										</div>
 										<div class="card-title">Avg Client Conversion/Trip</div>
 									</div>
-									<div class="card-content">
+									<div class="card-content" style="height: 82px;">
 										<div class="metric-block">
-											<span class="value up" style="background-color: red; color: white; margin-top: -35px;margin-left: 20px;margin-right: 15px;width: 70px;">20%</span>
+											<span class="value up" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">20%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
 											<div class="description">(Overall)<br> (Without RouteMaestro)</div>
 										</div>
@@ -1101,11 +1193,11 @@ background: rgba(250, 213, 27, 1);
 											<!-- <span class="value up">20%</span> -->
 											<img src="img\WebImages\Route Maestro Website Updated Images\Upward Arrow.png" height="8px" width="8px" alt="Up Arrow" class="arrow-icon">
 											<!-- <div class="description">Retention (Without Automations)</div> -->
-											<div class="arrow-up"></div>
+											<div class="arrow" style="margin-bottom: 0.5px;"></div>
 											<span class="growth">+50%</span>
 										</div>
 										<div class="metric-block">
-											<span class="value up" style="background-color: red; color: white; margin-top: -35px; margin-left: 20px;margin-right: 15px;width: 70px;">30%</span>
+											<span class="value up" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">30%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
 											<div class="description">(Overall)<br> (With RouteMaestro)</div>
 										</div>
@@ -1120,72 +1212,111 @@ background: rgba(250, 213, 27, 1);
 
 				</section>
 
-				<section class="section bg-transparent position-relative border-0 m-0 p-0">
+				<section class="zigzag-section section bg-transparent position-relative border-0 m-0 p-0">
 					<div class="container custom-container-background z-index-1 py-2">
-						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0 space" style="margin-top:70px !important ; margin-bottom: 75px !important;">
-							<div class="row">
-								<div class="secondhead col text-center" style="margin-top: 50px;margin-bottom: 30px;">
-									<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" style="text-decoration: underline;"><strong>Next Gen Travel Technology Solution For Travel Business</strong></h2>
-								</div>
-							</div>
-							<div class="col-lg-5 text-center text-lg-start appear-animation mr-5 nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
-								<img src="img\WebImages\Travel Routes (1).png" loading="lazy" class="img-fluid rounded-circle mb-4 mb-lg-0" alt="World Travel Route Map" />
-							</div>
-							<div class="col-lg-6 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 70px;">								
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Generating Door-To-Door</br> Travel Routes</strong></h2>
-								<p class="text-3-5 line-height-8 mb-4 text-left">RouteMaestro is equipped with the ability to generate comprehensive Multi-Modal Routes. By seamlessly integrating air travel with local transportation options like trains, buses, taxis, and more, RouteMaestro redefines how journeys are planned and executed End-To-End.</p>
-								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">VIEW INSURANCES</a> -->
+						<div class="row align-items-center pb-5 mb-5" style="margin-top: 70px; margin-bottom: 75px;">
+							<div class="col text-center" style="margin-top: 50px; margin-bottom: 30px;">
+								<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-5-5 appear-animation" 
+									data-appear-animation="fadeInUpShorterPlus" 
+									data-appear-animation-delay="100" 
+									style="text-decoration: underline;font-display: swap;" >
+									<strong>Next Gen Travel Technology Solution For Travel Business</strong>
+								</h2>
 							</div>
 						</div>
-						<div class="row align-items-center pt-1 my-5 space" style="margin-top:40px !important; margin-bottom: 40px !important;">
-						
-							<div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" style="padding-right: 20px;width: 39%;">
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right"><strong>Real-Time Direct Inventory</strong></h2>
-								<p class="text-3-5 line-height-8 mb-4 text-right">RouteMaestro’s AI Engine intelligently curates and integrates diverse booking inventories into seamless travel itineraries. Drawing from a wide array of sources, it enhances the planning & booking process, generating end-to-end trips and improving service provider outcomes.</p>
-								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">G</a> -->
+				
+						<div class="row align-items-center mb-5">
+							<div class="col-lg-5 order-2 text-center text-lg-start appear-animation mr-5 nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<img src="img/WebImages/Travel Routes (1).png" loading="eager" 
+									 class="img-fluid rounded-circle mb-4 mb-lg-0" 
+									 alt="World Travel Route Map" />
 							</div>
-							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext space" style="margin-left: 70px;width: 54%;display: flex;justify-content: center;align-items: center;">
-								<img src="img\WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Inventory Database"/>
-							</div>
-						</div>
-						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0 space" style="margin-top:50px !important; margin-bottom: 50px !important;">
-							
-							<div class="col-lg-5 text-center text-lg-start appear-animation mr-5 nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
-								<img src="img\WebImages\Route Maestro Website Updated Images\Package.png" class="img-fluid mb-4 mb-lg-0" alt="Itinerary" />
-							</div>
-							<div class="col-lg-6 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 70px;">								
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Generate Personalised Trips</br>
-									For Your Client</strong></h2>
-								<p class="text-3-5 line-height-8 mb-4 text-left">RouteMaestro harnesses AI-ML to create Personalized Travel Trips in real-time, tailored to the traveler’s persona. Within just 2 minutes, it integrates personalized options across hotels, sightseeing, restaurants, and more based on current availability. </p>
-								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">VIEW INSURANCES</a> -->
+							<div class="col-lg-6 order-1 text-center text-lg-start appear-animation nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1">
+									<strong>Generating Door-To-Door</br> Travel Routes</strong>
+								</h2>
+								<p class="text-3-5 line-height-8 mb-4 text-left">Route Maestro generates all possible Multi-Modal Door-to-Door Routes, seamlessly combining Air Travel with various local transportation across Trains, Buses, Taxis, & other transit choices within each city.</p>
 							</div>
 						</div>
-						<div class="row align-items-center pt-1 my-5 space" style="margin-top:50px !important; margin-bottom: 50px !important;">
-						
-							<div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100">
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right"><strong>Seamless Travel Scheduling</strong></h2>
-								<p class="text-3-5 line-height-8 mb-4 text-right">RouteMaestro generates Minute-by-Minute Travel Trips, precisely scheduling each service to the exact minute, ensuring an optimized and seamless travel experience.</p>
-								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">GEAT A QUOTE</a> -->
+				
+						<div class="row align-items-center mb-5" style="height: 440px;">
+							<div class="col-lg-6 order-1 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" 
+								 data-appear-animation="fadeInLeftShorterPlus" 
+								 data-appear-animation-delay="100">
+								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right">
+									<strong>Real-Time Direct Inventory</strong>
+								</h2>
+								<p class="text-3-5 line-height-8 mb-4 text-right">RouteMaestro’s AI generates Holidays from 1,000,000+ Hotels, 1000+ Airlines, 100,000+ Sightseeing & Transfers, Globally. Integration of Global Distribution Systems (GDS) and other Inventory APIs in our platform ensures Real-Time Availability of a vast inventory across all packages.</p>
 							</div>
-							<div class="col-lg-5 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext" style="margin-left: 70px;">
-								<img src="img\WebImages\Route Maestro Website Updated Images\Time Scheduling tester.png" class="img-fluid mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="100" alt="Time Scheduling" />
+							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext" 
+								 style="display: flex; justify-content: center; align-items: center;">
+								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" height="440px"
+									 class="img-fluid mb-4 mb-lg-0 appear-animation" 
+									 data-appear-animation="fadeInLeftShorterPlus" 
+									 data-appear-animation-delay="100" alt="Inventory Database"/>
 							</div>
 						</div>
-						<div class="row align-items-center pb-5 pb-lg-0 mb-5 mb-lg-0" style="margin-top:75px !important;margin-bottom: 75px !important;">
-							
-							<div class="col-lg-5 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
-								<img src="img\WebImages\latest pictures\Payment Options (1).png" class="img-fluid mb-4 mb-lg-0" alt="Payment Options" />
+				
+						<div class="row align-items-center mb-5">
+							<div class="col-lg-5 order-2 text-center text-lg-start appear-animation mr-5 nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<img src="img/WebImages\Route Maestro Website Updated Images\Package.png" 
+									 class="img-fluid mb-4 mb-lg-0" alt="Itinerary" />
 							</div>
-							<div class="col-lg-6 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 70px;">								
-								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Secure & Easy Payment Options</strong></h2>
+							<div class="col-lg-6 order-1 text-center text-lg-start appear-animation nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1">
+									<strong>Generate Personalised Trips</br> For Your Client</strong>
+								</h2>
+								<p class="text-3-5 line-height-8 mb-4 text-left">RouteMaestro leverages AI-ML to generate Personalized Travel Trips based on real-time availability, personalized across Hotels, Sightseeings, Restaurants & more according to Traveller Persona, within 2 Minutes! </p>
+							</div>
+						</div>
+				
+						<div class="row align-items-center mb-5">
+							<div class="col-lg-6 order-1 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" 
+								 data-appear-animation="fadeInLeftShorterPlus" 
+								 data-appear-animation-delay="100">
+								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right">
+									<strong>Seamless Travel Scheduling</strong>
+								</h2>
+								<p class="text-3-5 line-height-8 mb-4 text-right">Route Maestro generates 
+									Minute-by-Minute Travel Holidays relative to every service precisely scheduled down to the minute, to optimize the travel journey.</p>
+							</div>
+							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext">
+								<img src="img/WebImages\Route Maestro Website Updated Images\Time Scheduling tester.png" 
+									 class="img-fluid mb-4 mb-lg-0 appear-animation" 
+									 data-appear-animation="fadeInLeftShorterPlus" 
+									 data-appear-animation-delay="100" alt="Time Scheduling" />
+							</div>
+						</div>
+				
+						<div class="row align-items-center mb-5">
+							<div class="col-lg-5 order-2 text-center text-lg-start appear-animation nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<img src="img/WebImages/latest pictures/Payment Options (1).png" 
+									 class="img-fluid mb-4 mb-lg-0" alt="Payment Options" />
+							</div>
+							<div class="col-lg-6 order-1 text-center text-lg-start appear-animation nextgentext" 
+								 data-appear-animation="fadeInRightShorterPlus" 
+								 data-appear-animation-delay="100">
+								<h2 class=" text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1">
+									<strong>Secure & Easy Payment Options</strong>
+								</h2>
 								<p class="text-3-5 line-height-8 mb-4 text-left">Easily pay with cards (Credit & Debit), 
 									Net-Banking, or E-Wallet with secure 
 									payment gateways.</p>
-								<!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">VIEW INSURANCES</a> -->
 							</div>
-						</div>					
+						</div>
 					</div>
 				</section>
+				
 			
 				<section class="solution section-height-3 position-relative z-index-1 border-0 m-0 px-4 py-4 mb-5 mt-5" style="height: 500px; background-image: url('img/WebImages/Route Maestro Website Updated Images/backgrddmcsection1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 					<h2 class="text-color-dark font-weight-medium text-8 mb-5-5 mt-2 text-center">
@@ -1338,21 +1469,20 @@ background: rgba(250, 213, 27, 1);
 
 			</div>
 			
-			<section class="sectionmobile section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
-				<div class="container" style="height: 300px;">
-				  <div class="row align-items-center" style="height: 100px;">
-					<div class="col-xl-6 text-center" style="margin-top: -31px !important;">
-					  <img height="40px" width="300px" src="img\WebImages\CTA Image (3).png" alt="Mobile Phone" class="img-fluid">
+			<section class="route-maestro-section section section-height-3 position-relative z-index-1 border-0 m-0 gradient-bg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+							<img height="40px" width="300px" src="img/WebImages/CTA Image (3).png" alt="Mobile Phone" class="img-fluid">
+						</div>
+						<div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+							<div class="sectionmobiletext text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
+							<a href="#" class="sectionmobilebtn btn btn-custom11 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3">Get In Touch</a>
+						</div>
 					</div>
-					<div class="col-xl-5">
-					  <div class="d-flex flex-column align-items-center justify-content-center h-90" style="margin-top: -70px;">
-						<div class="sectionmobiletext text-color-light font-weight-bold text-7 mb-4 line-height-1 text-center">See RouteMaestro In Action</div>
-						<a href="#" class="sectionmobilebtn btn btn-custom11 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 25px;">Get In Touch</a>
-					  </div>
-					</div>
-				  </div>
 				</div>
-			  </section>
+			</section>
+			
 			  
 			  <!-- <div style="background: #07072C;"> -->
 		<div class="footermobile" style="background: #07072C; height: 450px;">
@@ -1368,7 +1498,7 @@ background: rgba(250, 213, 27, 1);
 								<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
 							</div>
 							<div style="align-items: center; justify-content: center;margin-top: 20px;margin-left: 75px;">
-								<img class="Ascentia" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
+								<img class="Ascentia" alt="Ascentia Labs" width="220" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
 								
 							</div>
 						</div>
@@ -1415,7 +1545,7 @@ background: rgba(250, 213, 27, 1);
 				
 				<div class="footer-copyright bg-transparent">
 					<hr style="border: 1px solid #ffffff;" />
-					<div class="container">
+					<div class="container" style="height: 40px !important;">
 						
 						<div class="row">
 							<div class="col mt-2 mb-2">
