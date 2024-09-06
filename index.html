@@ -452,8 +452,8 @@ background: rgba(250, 213, 27, 1);
   .section-height-3 h3, 
     .section-height-3 p {
         text-align: center;
-        margin-left: 10px;
-        margin-right: auto;
+        /* margin-left: 10px; */
+        /* margin-right: auto; */
     }
     .section-height-3 {
         margin-left: 10px !important;
@@ -533,7 +533,7 @@ background: rgba(250, 213, 27, 1);
     .section1 {
         margin-left: 10px !important;
         margin-right: 10px !important;
-        
+        background-image: none;
         border-radius: 5px;  
 		background-color: #07072C;        /* Smaller border-radius for mobile */
     }
@@ -597,17 +597,17 @@ background: rgba(250, 213, 27, 1);
 
 .dmcsection{
 	/* text-align: center !important; */
-	margin-left: 110px !important;
+	/* margin-left: 110px !important; */
 }
 
 .dmcsection1{
 	/* text-align: center !important; */
-	margin-left: 80px !important;
+	/* margin-left: 80px !important; */
 }
 
 .dmcsection2{
 	/* text-align: center !important; */
-	margin-left: 150px !important;
+	/* margin-left: 150px !important; */
 }
 }
 
@@ -624,6 +624,20 @@ background: rgba(250, 213, 27, 1);
 
 
 }
+
+@media (max-width: 1000px) {
+	
+
+	.btn-custom7{
+		margin-top: 52px !important;
+		margin-left: 88px !important;
+		justify-content: center !important;
+		
+	}
+	
+	
+	}
+	
 
 
 .icon-container {
@@ -701,141 +715,133 @@ background: rgba(250, 213, 27, 1);
   }
 }
 
-/* new section */
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        /* .travel-business-profits-section {
-            padding: 40px;
-            text-align: center;
-        }
+.card {
+    border: 1px solid #07072C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center; /* Center text content */
+    width: 260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center all content */
+}
 
-        .travel-business-profits-section h1 {
-            font-size: 32px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 15px;
-        }
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: none;
+    background-color: white;
+    justify-content: center; /* Center the card header */
+}
 
-        .travel-business-profits-section p {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 30px;
-        } */
+.card-icon {
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
 
-        .dashboard-wrapper {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    /* text-align: center;  */
+}
 
-        .card {
-            /* background-color: white; */
-            border: 1px solid #07072C;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 5px;
-            text-align: left;
-            width: 260px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
 
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-			border: none;
-			background-color: white;
-        }
+}
 
-        .card-icon {
-            background-color: #3b4e81;
-            border-radius: 50%;
-            padding: 10px;
-            display: inline-block;
-            margin-right: 10px;
-        }
+.metric-block {
+    text-align: center;
+}
 
-        .card-icon img {
-            /* width: 31px; */
-            /* height: 31px; */
-        }
+.metric-block .value {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
 
-        .card-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: black;
-        }
+.metric-block .description {
+    font-size: 11px;
+    text-align: center;
+}
 
-        .card-content {
-            display: flex;
-            justify-content: space-between;
-        }
+.metric-block .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #00C853; /* Green color for arrow */
+    margin-bottom: 5px;
+    position: relative;
+}
 
-        .metric-block {
-            text-align: center;
-        }
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
 
-        .metric-block .value {
-            font-size: 11px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 220px;
+    }
+}
 
-        .metric-block .description {
-            font-size: 11px;
-            /* color: #666; */
-            text-align: center;
-        }
+@media (max-width: 480px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .up {
-            color: #28a745;
-        }
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
-        .down {
-            color: #ff4949;
-        }
+/* Mobile specific styling */
+@media (max-width: 800px) {
+	
 
-        .arrow-icon {
-            width: 16px;
-            height: 16px;
-            margin-left: 5px;
-            vertical-align: middle;
-        }
+	.text-x{
+		margin-top: -633px;
+		margin-bottom:5px !important;
+		
+	}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .card {
-                width: 220px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .dashboard-wrapper {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
+	.text-x2{
+		margin-top: -500px;
+	}
+	
+	}
 
 
 
@@ -883,7 +889,7 @@ background: rgba(250, 213, 27, 1);
 														</nav>
 													</div>
 												</div>
-												<a href="#" class="position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold px-2 mb-3">Request A Demo</a>
+												<a href="#" class="position-relative top-2 btn btn-custom1 btn-outline btn-rounded text-2 font-weight-bold px-2 mb-3"  id="openModalBtn">Request A Demo</a>
 												<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 													<i class="fas fa-bars"></i>
 												</button>
@@ -921,14 +927,14 @@ background: rgba(250, 213, 27, 1);
 
 			<section class="section bg-transparent position-relative border-0 m-0 p-0">
 				
-					<div class="sectionimp pt-5 pb-5-5 mt-4">
+					<div class="pt-5 pb-5-5 mt-4 mb-10">
 						<div class="row">
 							<div class="col text-center">
 								<h2 class="text-color-dark font-weight-medium text-8 mt-4-5 mb-4-5 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100"><strong>Maximize Your Travel Business Profits </strong></h2>
 								<p class=" text-color-dark text-5 mb-4 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help<br> you to boost your travel business game.</p>
 							</div>
 						</div>
-						<section class="travel-business-profits-section">
+						<section class="travel-business-profits-section mt-5">
 							<!-- <h1>Maximize Your Travel Business Profits</h1> -->
 							<!-- <p>With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help you to boost your travel business game.</p> -->
 							
@@ -938,26 +944,28 @@ background: rgba(250, 213, 27, 1);
 								<div class="card">
 									<div class="card-header">
 										<div class="card-icon">
-											<img src="profitability-icon.png" height="8px" width="8px" alt="Profitability Icon">
+											<img src="img\WebImages\Route Maestro Website Updated Images\Avg Profitability.png" height="50px" weight="50px" alt="Profitability Icon">
 										</div>
 										<div class="card-title">Avg. Profitability</div>
 									</div>
 									<div class="card-content">
 										<div class="metric-block">
-											<span class="value down">5%</span>
+											<span class="value down" style="background-color: red;color: white; margin-left: 20px;margin-right: 15px;width: 70px; margin-top: -35px;">5%</span>
 											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
-											<div class="description">Overall Total Profit (Without Automations)</div>
+											<div class="description">(Overall Total Profit)<br> (Without RouteMaestro)</div>
 										</div>
 										<div class="metric-block">
 											<!-- <span class="value down">5%</span> -->
 											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+											<div class="arrow-up"></div>
+											<span class="growth">+200%</span>
 											<!-- <div class="description">Overall Total Profit (Without Automations)</div> -->
 										</div>
 
 										<div class="metric-block">
-											<span class="value up">15%</span>
+											<span class="value up" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px; margin-top: -35px;">15%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
-											<div class="description">Overall Total Profit (With Automations)</div>
+											<div class="description">(Overall Total Profit)<br> (With RouteMaestro)</div>
 										</div>
 									</div>
 								</div>
@@ -966,25 +974,27 @@ background: rgba(250, 213, 27, 1);
 								<div class="card">
 									<div class="card-header">
 										<div class="card-icon">
-											<img src="expenses-icon.png" height="8px" width="8px" alt="Expenses Icon">
+											<img src="img\WebImages\Route Maestro Website Updated Images\Avg Expenses.png" height="50px" weight="50px" alt="Expenses Icon">
 										</div>
 										<div class="card-title">Avg. Expenses</div>
 									</div>
 									<div class="card-content">
 										<div class="metric-block">
-											<span class="value down">15%</span>
+											<span class="value down" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">15%</span>
 											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
-											<div class="description">Overall Total Expense (Without Automations)</div>
+											<div class="description">(Overall Total Expenses)<br> (Without RouteMaestro)</div>
 										</div>
-										<div class="metric-block">
+										<div class="flex-column metric-block">
 											<!-- <span class="value down">15%</span> -->
 											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+											<div class="arrow-up"></div>
+											<span class="growth">-33.33%</span>
 											<!-- <div class="description">Overall Total Expense (Without Automations)</div> -->
 										</div>
 										<div class="metric-block">
-											<span class="value down">10%</span>
+											<span class="value down" style="background-color: red; color: white; margin-left: 20px;margin-right: 15px;width: 70px;">10%</span>
 											<!-- <img src="arrow-down.png" alt="Down Arrow" class="arrow-icon"> -->
-											<div class="description">Overall Total Expense (With Automations)</div>
+											<div class="description">(Overall Total Expenses)<br> (With RouteMaestro)</div>
 										</div>
 									</div>
 								</div>
@@ -993,23 +1003,25 @@ background: rgba(250, 213, 27, 1);
 								<div class="card">
 									<div class="card-header">
 										<div class="card-icon">
-											<img src="itinerary-icon.png" height="8px" width="8px" alt="Itinerary Icon">
+											<img src="img\WebImages\Route Maestro Website Updated Images\Itinerary.png" height="50px" weight="50px" alt="Itinerary Icon">
 										</div>
 										<div class="card-title">Avg. Time Taken To Generate An Itinerary</div>
 									</div>
 									<div class="card-content">
 										<div class="metric-block">
-											<span class="value">0-3 Days</span>
-											<div class="description">Without Automations</div>
+											<span class="value" style="background-color: red;color: white; margin-top: -35px;margin-left: 20px;margin-right: 15px;width: 70px;">1-2 Days</span>
+											<div class="description">(Without RouteMaestro)</div>
 										</div>
-										<div class="metric-block">
-											<img src="arrow-down.png" height="8px" width="8px" alt="Down Arrow" class="arrow-icon">
+										<div class="flex-column metric-block">
+											<img src="arrow-down.png" alt="Down Arrow" class="arrow-icon">
+											<div class="arrow-up"></div>
+											<span class="growth">+200%</span>
 
 										</div>
 										
 										<div class="metric-block">
-											<span class="value">60 Sec</span>
-											<div class="description">With Automations</div>
+											<span class="value" style="background-color: red; color: white; margin-top: -35px;margin-left: 20px;margin-right: 15px;width: 70px;">60 Sec</span>
+											<div class="description">(With RouteMaestro)</div>
 										</div>
 									</div>
 								</div>
@@ -1018,25 +1030,27 @@ background: rgba(250, 213, 27, 1);
 								<div class="card">
 									<div class="card-header">
 										<div class="card-icon">
-											<img src="retention-icon.png" height="8px" width="8px" alt="Retention Icon">
+											<img src="img\WebImages\Route Maestro Website Updated Images\Client Conversion.png" height="50px" weight="50px" alt="Retention Icon">
 										</div>
 										<div class="card-title">Client Retention & Conversion</div>
 									</div>
 									<div class="card-content">
 										<div class="metric-block">
-											<span class="value up">20%</span>
+											<span class="value up" style="background-color: red; color: white; margin-top: -62px;margin-left: 20px;margin-right: 15px;width: 70px;">20%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
-											<div class="description">Retention (Without Automations)</div>
+											<div class="description">(Overall)<br> (Without RouteMaestro)</div>
 										</div>
-										<div class="metric-block">
+										<div class="flex-column metric-block">
 											<!-- <span class="value up">20%</span> -->
-											<img src="arrow-up.png" height="8px" width="8px" alt="Up Arrow" class="arrow-icon">
+											<img src="img\WebImages\Route Maestro Website Updated Images\Picture2.png" height="8px" width="8px" alt="Up Arrow" class="arrow-icon">
 											<!-- <div class="description">Retention (Without Automations)</div> -->
+											<div class="arrow-up"></div>
+											<span class="growth">+50%</span>
 										</div>
 										<div class="metric-block">
-											<span class="value up">30%</span>
+											<span class="value up" style="background-color: red; color: white; margin-top: -62px; margin-left: 20px;margin-right: 15px;width: 70px;">30%</span>
 											<!-- <img src="arrow-up.png" alt="Up Arrow" class="arrow-icon"> -->
-											<div class="description">Retention (With Automations)</div>
+											<div class="description">(Overall)<br> (With RouteMaestro)</div>
 										</div>
 									</div>
 								</div>
@@ -1058,7 +1072,7 @@ background: rgba(250, 213, 27, 1);
 								</div>
 							</div>
 							<div class="col-lg-5 text-center text-lg-start appear-animation mr-5 nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">
-								<img src="img\WebImages\Travel Routes (1).png" class="img-fluid rounded-circle mb-4 mb-lg-0" alt="World Travel Route Map" />
+								<img src="img\WebImages\Travel Routes (1).png" loading="lazy" class="img-fluid rounded-circle mb-4 mb-lg-0" alt="World Travel Route Map" />
 							</div>
 							<div class="col-lg-6 text-center text-lg-start appear-animation nextgentext" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100" style="margin-left: 70px;">								
 								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-left line-height-1"><strong>Generating Door-To-Door</br> Travel Routes</strong></h2>
@@ -1362,7 +1376,7 @@ background: rgba(250, 213, 27, 1);
 		<!-- Modal HTML -->
 <div id="demoModal" class="modal">
     <div class="modal-content">
-        <span class="close-btn">&times;</span>
+        <span class="close-btn" style="display: flexbox;align-content: flex-end;">&times;</span>
         <div>
             <h2 class="modal-title">Request A Demo</h2>
             <p class="text-center" style="margin: 1px;">Transform your travel business with RouteMaestro.</p>
