@@ -109,7 +109,7 @@
   align-items: center;
   width: 160px !important;
   margin-top: 40px;
-  margin-left: 77px !important;
+  /* margin-left: 77px !important; */
   margin-right: -22px !important;
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
@@ -674,7 +674,7 @@ background: rgba(250, 213, 27, 1);
 }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .row {
         display: flex;
         flex-direction: column;
@@ -691,15 +691,15 @@ background: rgba(250, 213, 27, 1);
     .image-container {
         margin-top: 0 !important;
         margin-right: 0 !important;
-    }
+    } */
 
-    .btnnew:nth-child(3) {
+    /* .btnnew:nth-child(3) {
 		order: 3;
         width: 100%;
         text-align: center;
-		/* margin-top: 100px !important; */
-    }
-}
+		
+    } */
+
 
 
 /* Mobile specific styling */
@@ -1033,6 +1033,28 @@ background: rgba(250, 213, 27, 1);
     .zigzag-section .order-3 {
         order: 0; /* Reset to original order */
     }
+
+	
+}
+
+@media (max-width: 768px) {
+  .section .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section .col-lg-6:nth-child(2) {
+    order: 1; /* Image div */
+  }
+
+  .section .col-lg-6:nth-child(1) {
+    order: 2; /* Accordion div */
+  }
+
+  .section .btnnew {
+    order: 3; /* Button */
+    margin-top: 10px !important;
+  }
 }
 
 
@@ -1450,8 +1472,10 @@ background: rgba(250, 213, 27, 1);
 								<p style="margin-left: 7px; font-size: x-large; color: white;">ROUTEMAESTRO</p>
 							</div>
 							<div style="align-items: center; justify-content: center;margin-top: 20px;margin-left: 75px;">
-								<img class="Ascentia" alt="Ascentia Labs" width="240" height="40" style="margin-bottom: 10px;" src="img\WebImages\Ascentia Logo (1).png">
-								
+								<a href="https://ascentialabs.com/" target="_blank">
+									<img class="Ascentia" alt="Ascentia Labs" width="240" height="40" style="margin-bottom: 10px;" src="img/WebImages/Ascentia Logo (1).png">
+								  </a>
+																  
 							</div>
 						</div>
 						
