@@ -136,6 +136,26 @@
   
 }
 
+.btnnew{
+	background: #FE6652 ; 
+  color: white; 
+  border: none; 
+  /* padding: 0.5rem 1rem;  */
+  border-radius: 0.5rem; 
+  font-weight: bold;
+  font-size: 1.3rem !important; 
+  align-items: center;
+  width: 251px !important;
+  margin-left: 50px !important;
+  /* margin-right: 18px !important; */
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  
+  
+
+}
 .btn-custom7{
   background: #FE6652 ; 
   color: white; 
@@ -171,82 +191,6 @@
   
 }
 
-.dashboard-wrapper {
-	display: flex;
-	justify-content: space-between; /* Adjust spacing between cards */
-	align-items: center; /* Align cards vertically */
-	gap: 15px; /* Add some space between the cards */
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.card {
-	flex: 1; /* Ensure all cards take equal width */
-	padding: 0;
-	border: none;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-icon img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
-
-/* Zoom effect on hover */
-.card:hover {
-    transform: scale(1.05); /* Scale the card to 105% on hover */
-	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); /* Shadow on hover */
-}
-
- 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .card {
-        /* width: 220px; */
-    }
-}
-
-@media (max-width: 480px) {
-    .dashboard-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .card {
-        width: 220px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .dashboard-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 300px;
-		margin-top: 30px;
-    }
-
-}
 
 
 .btn-custom4:hover {
@@ -281,6 +225,11 @@
 }
 
 .btn-custom7:hover {
+  background: #e2472b; /* Change color on hover */
+  /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
+  color: #fff; /* Change text color on hover */
+}
+.btnnew:hover {
   background: #e2472b; /* Change color on hover */
   /* box-shadow: 0 0 10px rgba(255, 193, 7, 0.6), 0 0 20px rgba(255, 193, 7, 0.6); */
   color: #fff; /* Change text color on hover */
@@ -506,12 +455,9 @@ background: rgba(250, 213, 27, 1);
   #footer .footer-copyright .text-3 {
     font-size: 1rem !important;
   }
-  
-  
-
-
-
-
+   #footer .footer-copyright{
+	height: 20px !important;
+   }
 
    #footer .social-icons {
     text-align: center; /* Center-align social icons */
@@ -534,14 +480,8 @@ background: rgba(250, 213, 27, 1);
     /* font-size: 24px;  */
 	text-align: center;
 	margin-left: 0px !important;
-	margin-bottom: 5px !important;
   }
 
-  
-  .list li {
-        margin-left: 0px !important; /* Reduce left margin for mobile */
-    
-    }
   
 }
 
@@ -708,6 +648,7 @@ background: rgba(250, 213, 27, 1);
 .ctap{
 	margin-left: 10px !important;
 	text-align: left !important;
+	margin-bottom: 10px;
 }
 
 .col-lg-4 .p
@@ -737,6 +678,13 @@ background: rgba(250, 213, 27, 1);
 .btn-custom7{
 	margin-top: -36px !important;
 	margin-left: 80px !important;
+	justify-content: center !important;
+	
+}
+
+.btnnew{
+	margin-top: -5px !important;
+	margin-left: 44px !important;
 	justify-content: center !important;
 	
 }
@@ -832,9 +780,91 @@ background: rgba(250, 213, 27, 1);
   .section {
     /* height: auto !important; */
   }
+
+  .list li {
+        margin-left: 0px !important; /* Reduce left margin for mobile */
+    
+    }
+}
+
+.dashboard-wrapper {
+	display: flex;
+	justify-content: space-between; /* Adjust spacing between cards */
+	align-items: center; /* Align cards vertically */
+	gap: 15px; /* Add some space between the cards */
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.card {
+	flex: 1; /* Ensure all cards take equal width */
+	padding: 0;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 
+
+/* Zoom effect on hover */
+.card:hover {
+    transform: scale(1.05); /* Scale the card to 105% on hover */
+	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+ 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        /* width: 220px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+		/* margin-bottom: 20px; */
+		margin-top: 30px;
+    }
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
 
 /* Mobile specific styling */
 @media (max-width: 800px) {
@@ -1055,31 +1085,34 @@ background: rgba(250, 213, 27, 1);
 								<p class=" text-color-dark text-5 mb-4 appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="100">With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help<br> you to boost your travel business game.</p>
 							</div>
 						</div>
-						<section class="travel-business-profits-section mt-5">
-							<div class="dashboard-wrapper" style="margin-bottom: 5px !important;">
-								<div class="card">
-									<div class="card-icon">
-										<img src="img/WebImages/Route Maestro Website Updated Images/Avg Profitability(1).png" alt="Profitability Icon">
+						<!-- <section class="travel-business-profits-section mt-5"> -->
+							<!-- <h1>Maximize Your Travel Business Profits</h1> -->
+							<!-- <p>With RouteMaestro, transform your bookings and overhead expenses into profit and unlock savings that will help you to boost your travel business game.</p> -->
+							<section class="travel-business-profits-section mt-5">
+								<div class="dashboard-wrapper">
+									<div class="card">
+										<div class="card-icon">
+											<img src="img/WebImages/Route Maestro Website Updated Images/Avg Profitability(1).png" alt="Profitability Icon">
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<img src="img/WebImages/Route Maestro Website Updated Images/Expense.png" alt="Expense Icon">
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<img src="img/WebImages/Route Maestro Website Updated Images/Input Time.png" alt="Input Time Icon">
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-icon">
+											<img src="img/WebImages/Route Maestro Website Updated Images/Client Conversion(1).png" alt="Client Conversion Icon">
+										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-icon">
-										<img src="img/WebImages/Route Maestro Website Updated Images/Expense.png" alt="Expense Icon">
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-icon">
-										<img src="img/WebImages/Route Maestro Website Updated Images/Input Time.png" alt="Input Time Icon">
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-icon">
-										<img src="img/WebImages/Route Maestro Website Updated Images/Client Conversion(1).png" alt="Client Conversion Icon">
-									</div>
-								</div>
-							</div>
-						</section>
-						
+							</section>
+						<!-- </section> -->
 				
 					</div>
 				</div>
@@ -1128,7 +1161,7 @@ background: rgba(250, 213, 27, 1);
 							</div>
 							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext" 
 								 style="display: flex; justify-content: center; align-items: center;">
-								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg"
+								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" height="440px"
 									 class="img-fluid mb-4 mb-lg-0 appear-animation" 
 									 data-appear-animation="fadeInLeftShorterPlus" 
 									 data-appear-animation-delay="100" alt="Inventory Database"/>
@@ -1285,7 +1318,7 @@ background: rgba(250, 213, 27, 1);
 								</div>
 							</div>
 							
-							<a href="#" class="btn btn-custom7 border-0 font-weight-bold text-3 btn-px-5 py-3 mt-2" style="width: 250px;">Get In Touch</a>
+							<a href="#" class="btnnew btn border-0 font-weight-bold text-3 btn-px-5 py-3 mt-2" style="width: 250px;">Get In Touch</a>
 
 						</div>
 <!-- 
@@ -1321,7 +1354,7 @@ background: rgba(250, 213, 27, 1);
 
 				</section>
 
-				<section class="ctasection section1 section-height-3 position-relative z-index-1 border-0 m-0 mt-5-5 px-4 py-4 mb-5 mt-5" style="margin-left: 30px;margin-right: 30px;border-radius:10px;">
+				<section class="ctasection section1 section-height-3 position-relative z-index-1 border-0 m-0 mt-5-5 px-4 py-4 mb-5 mt-5" style="margin-left: 30px ;margin-right: 30px;border-radius:10px;">
 				
 					<div class="container" style="height: 345px;">
 					  <div class="row align-items-center" style="height: 250px;">
@@ -1333,6 +1366,7 @@ background: rgba(250, 213, 27, 1);
 						<div class="col-xl-5">
 						  <div class="d-flex flex-column align-items-center justify-content-center h-90 mt-4 px-4 py-4">
 							<img src="img/WebImages/footerlogonew.png" alt="Description of image" class="mb-4 d-block d-md-none" style="width:80px; height:80px;text-align: left;">
+
 							<h2 class="ctah2 text-left text-color-light mb-5-5 mt-2" style="line-height: 1; font-size: 48px; margin-left: -115px;"><strong> Travel-as-a-Service Platform</strong></h2>
 							<p class="ctap text-left text-color-light mb-4 text-4 line-height-3" style="margin-right: 20px;margin-left: -75px;">Unlock the travel world with our cutting-edge technology solution, which revolutionizes the travel industry by delivering an unparalleled travel experience, simplifying travel arrangements, and fostering innovation for future business growth.  </p>
 							<!-- <a href="#" class="btn btn-custom3 btn-rounded font-weight-bold border-0 text-3 px-5 btn-py-3" style="margin-top: 30px;">Get In Touch To Know More!</a> -->
