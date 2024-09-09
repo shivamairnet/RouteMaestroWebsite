@@ -1040,6 +1040,26 @@ background: rgba(250, 213, 27, 1);
   }
 }
 
+@media (max-width: 768px) {
+    .renamed-section .col-lg-5 {
+        order: 1;
+        margin-right: 0;
+        display: flex !important; /* Ensure the div is visible */
+        justify-content: center; /* Center the image horizontally */
+        width: 100%; /* Ensure the image takes up the available width */
+    }
+
+    .renamed-section .col-lg-6 {
+        order: 2;
+        text-align: center; /* Adjust text alignment for mobile */
+    }
+
+    .renamed-section img {
+        max-width: 100%; /* Ensure the image resizes properly */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 
 
 		</style>
@@ -1198,8 +1218,8 @@ background: rgba(250, 213, 27, 1);
 							</div>
 						</div>
 				
-						<div class="row align-items-center mb-5" style="height: 440px;">
-							<div class="col-lg-6 order-1 text-center text-lg-start order-2 order-lg-1 appear-animation nextgentext" 
+						<div class="row align-items-center mb-5 renamed-section">
+							<div class="col-lg-6 order-1 text-center text-lg-start order-2 order-lg-1 appear-animation" 
 								 data-appear-animation="fadeInLeftShorterPlus" 
 								 data-appear-animation-delay="100">
 								<h2 class="text-color-dark font-weight-medium text-8 mb-4-5 text-right">
@@ -1207,9 +1227,9 @@ background: rgba(250, 213, 27, 1);
 								</h2>
 								<p class="text-3-5 line-height-8 mb-4 text-right">RouteMaestro’s AI generates Holidays from 1,000,000+ Hotels, 1000+ Airlines, 100,000+ Sightseeing & Transfers, Globally. Integration of Global Distribution Systems (GDS) and other Inventory APIs in our platform ensures Real-Time Availability of a vast inventory across all packages.</p>
 							</div>
-							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5 nextgentext" 
+							<div class="col-lg-5 order-2 text-center text-lg-end order-1 order-lg-2 mr-5" 
 								 style="display: flex; justify-content: center; align-items: center;">
-								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager" height="440px"
+								<img src="img/WebImages\Route Maestro Website Updated Images\REinvent.jpg" loading="eager"
 									 class="img-fluid mb-4 mb-lg-0 appear-animation" 
 									 data-appear-animation="fadeInLeftShorterPlus" 
 									 data-appear-animation-delay="100" alt="Inventory Database"/>
