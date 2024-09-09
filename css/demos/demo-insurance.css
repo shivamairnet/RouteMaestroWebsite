@@ -34,7 +34,7 @@
 
 .custom-container-background {
 		position: relative;
-		margin-top: -69px;
+		/* margin-top: -69px; */
 }
 
 .custom-container-background:before {
@@ -46,7 +46,7 @@
 		width: 125%;
 		height: 300px;
 		background: #FFF;
-		margin-top: 95px;
+		/* margin-top: 95px; */
 }
 
 .custom-form-control-group-style-1 .form-control {
